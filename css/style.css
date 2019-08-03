@@ -64,12 +64,16 @@ h4 {
 header {
   position: fixed;
   top: 0;
+  width: 100%;
+  max-width: 1152px;
   background-color: white;
+  padding-top: .8rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
 }
 
 nav {
 float: right;
-
 }
 
 .menu ul {
@@ -101,14 +105,14 @@ float: right;
   text-decoration: none;
 }
 
-#linkedin{
-}
-
 /* Homepage */
 
 .container1{
     max-width: 606px;
-    margin: 0 auto;
+    margin-top: 4.1rem;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .container2 {
