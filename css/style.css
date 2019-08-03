@@ -1,14 +1,16 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
+
 html {
   height: 100%;
   background-color: #E0E0E0;
 }
+
 body {
     background-color: white;
     font-size: 10px;
-    font-family: Neuzeit Grotesk; sans-serif;
+    font-family: Neuzeit Grotesk, sans-serif;
     color: #000000;
 
     max-width: 1152px;
@@ -16,37 +18,40 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
-
-
 
 /* --------Navigation------------ */
 
-.menu-container {
+header {
   position: fixed;
   top: 0;
-  
-}
-.menu-container ul {
   background-color: white;
-  display: grid;
-  grid-gap: 20px;
-  padding: 0;
-  list-style: none;
-  grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
 }
 
-.menu-container a {
-  display: block;
+nav {
+float: right;
+
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  float: right;
+}
+
+.menu a {
+  float: left;
   text-decoration: none;
   padding: 0.8rem;
   text-align: center;
   color: #4F4F4F;
-  text-transform: ;
   font-size: 1.1rem;
 }
-.menu-container a:hover {
+.menu a:hover {
   color: #41A76E;
 }
 
@@ -56,14 +61,8 @@ body {
   color: #000000;
   text-decoration: none;
 }
-.projects{
-  grid-column: 3/4;
-}
-.contact{
-  grid-column:  4/5;
-}
-.linkedin{
-  grid-column: 5/6;
+
+#linkedin{
 }
 
 /* HOME PAGE */
@@ -127,8 +126,6 @@ h4 {
     text-align: center;
     letter-spacing: 0.1em;
     color: #000000;
-}
-
 }
 
 * {
