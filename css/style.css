@@ -1,5 +1,7 @@
 *, *:before, *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -12,13 +14,50 @@ body {
     font-size: 10px;
     font-family: Neuzeit Grotesk, sans-serif;
     color: #000000;
-
     max-width: 1152px;
     min-height: 100%;
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.8em;
+    line-height: 58px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+article{
+
+    max-width: 606px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.6em;
+    line-height: 29px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
 
 /* --------Navigation------------ */
 
@@ -65,30 +104,26 @@ float: right;
 #linkedin{
 }
 
-/* HOME PAGE */
+/* Homepage */
 
-.homepage-main {
-  margin-top: 81.59px;
-  margin-left: 33.506944%;
-  margin-right: 33.506944%;
+.container1{
+    max-width: 606px;
+    margin: 0 auto;
 }
 
-h1 {
-    font-family: Neuzeit Grotesk;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 4.8em;
-    line-height: 58px;
-    letter-spacing: 0.1em;
-    text-align: center;
+.container2 {
+    max-width: 606px;
+    position: relative;
+    max-width: 606px;
     margin: 0 auto;
-    text-align: center;
-  }
-  article{
-      font-size: 0.8em;
-  }
+}
+
+.in{
+    width: 50px;
+    position:relative;
+    top: 180px;
+    right: -30%;
+}
 
 .lyly{
     object-position: center;
@@ -106,32 +141,6 @@ h1 {
     position:relative;
     top: 250px;
     right: -40%;
-
-}
-
-
-
-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.6em;
-    line-height: 29px;
-}
-
-h4 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.6em;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #000000;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 /*contact*/
