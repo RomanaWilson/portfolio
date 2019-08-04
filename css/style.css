@@ -293,6 +293,7 @@ float: right;
  }
 .peas{
     height: 133.93px;
+    text-align: center;
 }
 
 .projectname{
@@ -308,6 +309,7 @@ float: right;
 
 .subtitle {
     font-style: normal;
+    text-align: center;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
@@ -316,7 +318,7 @@ float: right;
 }
 
 .caption{
-
+    text-align: center;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
