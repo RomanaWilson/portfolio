@@ -7,11 +7,11 @@
 html {
   height: 100%;
   background-color: #F8F8F8;
+  font-size: 10px;
 }
 
 body {
     background-color: white;
-    font-size: 10px;
     font-family: Neuzeit Grotesk, sans-serif;
     color: #000000;
     max-width: 1152px;
@@ -23,9 +23,9 @@ body {
 h1 {
     font-style: normal;
     font-weight: 600;
-    font-size: 4.8em;
+    font-size: 4.8rem;
     line-height: 58px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
 }
 
 article{
@@ -41,17 +41,17 @@ p {
     font-weight: normal;
     font-family: Fira Sans, Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 19px;
 }
 
 h4 {
     font-style: normal;
     font-weight: normal;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 19px;
     text-align: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     color: #000000;
 }
 
@@ -74,7 +74,7 @@ header {
   font-weight:600;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 
 nav {
@@ -94,7 +94,7 @@ float: right;
 .menu a {
   float: left;
   text-decoration: none;
-  padding-right: 6.1rem;
+  padding-right: 6.2rem;
   padding-top: .9rem;
   text-align: center;
   color: #4F4F4F;
