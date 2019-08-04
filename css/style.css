@@ -171,7 +171,7 @@ float: right;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 92px);
   grid-gap: 20px;
-  grid-template-areas: ""; 
+  grid-template-areas: "";
 }
 
 .sayhi {
@@ -263,80 +263,11 @@ float: right;
 
 }
 
-/* project page*/
-
-.project-main{
-  margin-left: 9.6%;
-  margin-right: 9.6%;
-
-  display: grid;
-  grid-template-columns: repeat (5, 1fr);
-  grid-column-gap:20px;
-  grid-template-rows: 140px 140px 140px 140px 140px;
-  grid-row-gap: 1px;
-
-}
-
-/*  Meerkat */
-
-.colab{
-  grid-column: 2/3;
-  grid-row: 2/5;
-}
-
-.meerkat{
-    max-width: 167px;
-
-}
- .peasinheart{
-   grid-column: 4/6;
-   grid-row: 4/5;
- }
-.peas{
-    height: 133.93px;
-    text-align: center;
-}
-
-.projectname{
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    color: #000000;
-}
-
-.subtitle {
-    font-style: normal;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    color: #000000;
-}
-
-.caption{
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
-    letter-spacing: 0.1em;
-
-    /* Gray 3 */
-
-    background: #828282;
-}
 
 footer {
     position: absolute;
     left: 0;
-    bottom: 40px; 
+    bottom: 40px;
     width: 100%;
     color: #A0D3B6;
     text-align: center;
