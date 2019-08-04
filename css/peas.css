@@ -1,0 +1,141 @@
+.hero-title{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.hero-text{
+  font-family: Fira Sans;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.bold-title{
+  text-transform: uppercase;
+  font-family: Neuzeit Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  color: #000000;
+
+}
+.project-caption p {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+#green{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color:#6ba432;
+
+}
+/* mouse over link */
+a:hover {
+  color: #3A4F30;
+}
+
+
+.infotext{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  color: #6BA432;
+}
+
+/*--------- global -------------*/
+
+main {
+  margin: 0 9.6% 0 9.6%;
+  }
+
+.project section {
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.section-title {
+  grid-column: 1/3;
+  grid-row-start: 1;
+}
+
+.project-caption {
+
+}
+
+
+/* hero */
+#hero {
+  grid-template-rows: repeat(10, 68px);
+}
+
+#shape1{
+  max-width: 580px;
+  grid-column: 1/6;
+  grid-row-start: 4;
+}
+
+#colab-title {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+#colab-desc {
+  grid-column: 2/5;
+  grid-row-start: 3;
+}
+
+#role {
+  padding-top: 68px;
+  grid-column: 2/3;
+  grid-row-start: 7;
+}
+
+#location {
+  padding-top: 68px;
+  grid-column: 3/4;
+  grid-row-start: 7;
+}
+
+#website {
+  padding-top: 68px;
+  grid-column: 4/5;
+  grid-row-start: 7;
+}
+
+#peas_infotext {
+  /* padding-top: 25px; */
+  grid-column: 2/4;
+  grid-row-start: 9;
+}
+
+/*----PICTURES-----*/
+
+#shape1{
+  padding-top: 40px;
+  max-width: 910px;
+}
