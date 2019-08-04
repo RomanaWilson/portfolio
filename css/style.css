@@ -55,6 +55,18 @@ h4 {
     color: #000000;
 }
 
+h6 {
+  font-family: Neuzeit Grotesk;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
 
 /* --------Navigation------------ */
 
@@ -115,6 +127,144 @@ float: right;
   color: #41A76E;
 }
 
+
+/* aside text*/
+
+.vertical-text {
+  width: 85px;
+  position: relative;
+  left: 1042px;
+  writing-mode: vertical-rl;
+}
+
+.vertical-text span {
+  text-orientation: upright;
+}
+
+.top{
+  padding-top: 228px;
+}
+
+
+
+/*---------text styling-------------*/
+.hero-title{
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+
+.hero-text{
+font-family: Fira Sans;
+font-style: italic;
+font-weight: 300;
+font-size: 16px;
+line-height: 23px;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+
+.bold-title{
+text-transform: uppercase;
+font-family: Neuzeit Grotesk;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.1em;
+color: #000000;
+
+}
+
+.project-caption h3 {
+/* Romi to make spacing here */
+}
+
+.project-caption p {
+font-family: Raleway;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.1em;
+color: #000000;
+/* Romi to make spacing here */
+}
+
+#red{
+color: #FF3351;
+font-weight: 400;
+}
+
+.section-title {
+text-transform: uppercase;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.1em;
+color: #000000;
+}
+
+.project-paragraph{
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.1em;
+color: #000000;
+}
+
+#bold{
+font-family: Neuzeit Grotesk;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+/* or 157% */
+letter-spacing: 0.1em;
+color: #000000;
+}
+
+
+/*---------pictures-------------*/
+
+.project img {
+width: 100%;
+}
+
+.persona {
+max-width: 166px;
+}
+
+
+/*------ global layout --------*/
+
+.main {
+margin: 0 9.6% 0 9.6%;
+}
+
+.project section {
+display: grid;
+grid-gap: 20px;
+margin-bottom: 20px;
+grid-template-columns: repeat(5, 1fr);
+}
+
+.section-title {
+grid-column: 1/5;
+grid-row-start: 1; 
+}
+
+.project-caption {
+
+}
 
 /* Homepage */
 
