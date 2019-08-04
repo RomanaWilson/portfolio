@@ -111,3 +111,76 @@ letter-spacing: 0.1em;
 color: #000000;
 
 }
+
+/*---------pictures-------------*/
+
+.shape1{
+  max-width: 580px;
+}
+.computers{
+  max-width: 936px;
+}
+.graph{
+  max-width: 538px;
+}
+.persona{
+  max-width: 166px;
+}
+.flow{
+  max-width: 910px;
+}
+.legend{
+  max-width: 273px;
+}
+.sketch{
+  max-width: 912px;
+}
+.wireframe{
+  max-width: 540px;
+}
+.typography{
+  max-width: 540px;
+}
+.colors{
+  max-width: 377.53px;
+}
+.meerkat1{
+  max-width: 359.39px;
+}
+.meerkat2{
+  max-width: 356px;
+}
+.computer{
+  max-width: 540px;
+}
+.hi-small{
+  max-width: 454px;
+}
+.hi-big{
+  max-width: 540px;
+}
+.shape2{
+  max-width: 166px;
+}
+.up{
+  max-width: 13.28px;
+}
+.next{
+  max-height: 17px;
+}
+footer a:link {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  font-family: Neuzeit Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+
+
+}
