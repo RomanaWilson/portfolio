@@ -100,6 +100,17 @@ float: right;
   color: #4F4F4F;
   font-size: 1.6rem;
 }
+
+.in {
+  background-image: url("../images/in.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1.6em;
+  height: 1.6em;
+  margin-top: .6rem;
+  margin-right: 1.6em;
+}
+
 .menu a:hover {
   color: #41A76E;
 }
