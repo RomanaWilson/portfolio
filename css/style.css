@@ -161,31 +161,7 @@ float: right;
   grid-row-start: 4;
 }
 
-<<<<<<< HEAD
 /*contact*/
-=======
-/*
-.container1 {
-    max-width: 606px;
-    margin-top: 4.1rem;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-.container2 {
-    max-width: 606px;
-    margin: 0 auto;
-    position: relative;
-}
-
- .in{
-    width: 50px;
-    position:relative;
-    top: 180px;
-    right: -30%;
-}
->>>>>>> 1d9db8360b7564922314e7318107dbc008800e0d
 
 #contact {
   max-width: 540px;
@@ -358,11 +334,7 @@ float: right;
 footer {
     position: absolute;
     left: 0;
-<<<<<<< HEAD
     bottom: 40px; 
-=======
-    bottom: 0;
->>>>>>> 1d9db8360b7564922314e7318107dbc008800e0d
     width: 100%;
     color: #A0D3B6;
     text-align: center;
