@@ -6,9 +6,42 @@
   .peasinheart{display: none;}
   .text2{display: none;}
 
+  .project-main{display: none}
+
+  #mobile {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/shape-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 70%;
+    padding: 0% 9.6% 0% 9.6%;
+  }
+
+  #mobile h2 {
+    text-align: center;
+    padding-top: 40%;
+    }
+
+  #mobile p {
+    text-align: left;
+    color: #000000;
+  }
+
+  #mobile img {
+    grid-column:  1/2;
+    grid-row-start: 1;
+    /* width: 100% */
+  }
+  
 }
 
 @media screen and (min-width: 600px) {
+
+
+  #mobile {display: none;}
+
+
   .project-main{
     margin-left: 9.6%;
     margin-right: 9.6%;
