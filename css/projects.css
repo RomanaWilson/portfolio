@@ -87,14 +87,17 @@
 
     color: #000000;
 
-  }
+.project-text{
+  font-family: Neuzeit Grotesk;
+  font-style: regular;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #828282;
+}
 
-  .project-text{
-    font-family: Neuzeit Grotesk;
-    font-style: regular;
-    font-weight: normal;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    color: #828282;
-  }
+/*-----mobile coming soon-----*/
+
+#lowercase{
+   text-transform: lowercase;
 }
