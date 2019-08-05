@@ -90,3 +90,9 @@ a:link {
   letter-spacing: 0.1em;
   color: #828282;
 }
+
+/*-----mobile coming soon-----*/
+
+#lowercase{
+   text-transform: lowercase;
+}
