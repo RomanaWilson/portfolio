@@ -433,23 +433,3 @@
   padding-left: 27,85%;
 }
 
-
-.up{
-  max-width: 13.28px;
-}
-.next{
-  max-height: 17px;
-}
-footer a:link {
-  text-decoration: none;
-  color: black;
-}
-footer {
-  font-family: Neuzeit Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
