@@ -1,139 +1,4 @@
 
-/* aside text*/
-
-.vertical-text {
-    width: 85px;
-    position: relative;
-    left: 1042px;
-    writing-mode: vertical-rl;
-}
-
-.vertical-text span {
-    text-orientation: upright;
-}
-
-.top{
-    padding-top: 228px;
-}
-
-
-
-/*---------text styling-------------*/
-.hero-title{
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
-}
-
-.hero-text{
-  font-family: Fira Sans;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 23px;
-  letter-spacing: 0.1em;
-  color: #FFFFFF;
-}
-
-.bold-title{
-  text-transform: uppercase;
-  font-family: Neuzeit Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.1em;
-  color: #000000;
-
-}
-
-.project-caption h3 {
-  /* Romi to make spacing here */
-}
-
-.project-caption p {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: #000000;
-  /* Romi to make spacing here */
-}
-
-#red{
-  color: #FF3351;
-  font-weight: 400;
-}
-
-.section-title {
-  text-transform: uppercase;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-
-.project-paragraph{
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-
-#bold{
-font-family: Neuzeit Grotesk;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 22px;
-/* or 157% */
-}
-
-/*---------pictures-------------*/
-
-.project img {
-  width: 100%;
-}
-
-.persona {
-  max-width: 166px;
-}
-
-
-/*------ global layout --------*/
-
-main {
-  margin: 0 9.6% 0 9.6%;
-  }
-
-.project section {
-  display: grid;
-  grid-gap: 20px;
-  margin-bottom: 20px;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.section-title {
-  grid-column: 1/5;
-  grid-row-start: 1; 
-}
-
-.project-caption {
-
-}
-
 /*--------- layout -------------*/
 
 /* hero */
@@ -184,6 +49,7 @@ main {
 }
 
 #col_org {
+  padding-left: 24.08%;
   grid-column: 1/3;
   grid-row-start: 6;
 }
@@ -191,12 +57,14 @@ main {
 #col_col {
   grid-column: 3/4;
   grid-row-start: 6;
+  text-align: center;
 }
 
 #col_com {
+  padding-left: 44.2%;
   grid-column: 4/6;
   grid-row-start: 6;
-  justify-self: end;
+
 }
 
 #col_sum {
@@ -212,67 +80,67 @@ main {
 #graph{
   max-width: 538px;
   grid-column: 3/6;
-  grid-row-start: 2; 
+  grid-row-start: 2;
 }
 
 #col_dem {
   grid-column: 1/2;
-  grid-row-start: 2; 
+  grid-row-start: 2;
   justify-self: end;
 }
 
 #col_usage {
   grid-column: 1/2;
-  grid-row-start: 5; 
+  grid-row-start: 5;
 }
 
 #col_pers {
   grid-column: 1/2;
-  grid-row-start: 9; 
+  grid-row-start: 9;
 }
 
 #col_pers_img1 {
   grid-column: 2/3;
-  grid-row-start: 10; 
+  grid-row-start: 10;
 }
 
 #col_juniorc {
   grid-column: 1/4;
-  grid-row-start: 14; 
+  grid-row-start: 14;
   justify-self: center;
   width: 317px;
 }
 
 #col_frus1 {
   grid-column: 2/3;
-  grid-row-start: 16; 
+  grid-row-start: 16;
 }
 
 #col_goals1 {
   grid-column: 2/3;
-  grid-row-start: 19; 
+  grid-row-start: 19;
 }
 
 #col_pers_img2 {
   grid-column: 4/5;
-  grid-row-start: 10; 
+  grid-row-start: 10;
 }
 
 #col_seniorg {
   grid-column: 3/6;
   grid-row-start: 14;
-  justify-self: center; 
+  justify-self: center;
   width: 317px;
 }
 
 #col_frus2 {
   grid-column: 4/5;
-  grid-row-start: 16; 
+  grid-row-start: 16;
 }
 
 #col_goals2 {
   grid-column: 4/5;
-  grid-row-start: 19; 
+  grid-row-start: 19;
 }
 
 /* information architecture */
@@ -282,7 +150,7 @@ main {
 
 #col_user_wants_col {
   grid-column: 1/3;
-  grid-row-start: 2; 
+  grid-row-start: 2;
 }
 
 #col_flow1 {
@@ -291,7 +159,7 @@ main {
 
 #col_user_wants_organize {
   grid-column: 1/3;
-  grid-row-start: 7; 
+  grid-row-start: 7;
 }
 
 #col_flow2 {
@@ -300,7 +168,7 @@ main {
 
 #col_legend_title {
   grid-column: 5/6;
-  grid-row-start: 10; 
+  grid-row-start: 10;
   justify-self: end;
 }
 
@@ -308,7 +176,7 @@ main {
   grid-column: 4/6;
   grid-row-start: 11;
   justify-self: end;
-  margin-top: -20px; 
+  margin-top: -20px;
 }
 
 /*  Prototype and Testing */

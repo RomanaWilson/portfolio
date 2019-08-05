@@ -181,6 +181,7 @@ color: #000000;
 }
 
 .project-caption h3 {
+padding-bottom: 3px;
 /* Romi to make spacing here */
 }
 
@@ -192,15 +193,18 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.1em;
 color: #000000;
+padding-bottom: 25px;
 /* Romi to make spacing here */
 }
 
 #red{
 color: #FF3351;
-font-weight: 400;
+font-weight: 900;
+text-decoration: underline;
 }
 
 .section-title {
+padding-bottom: 20px;
 text-transform: uppercase;
 font-family: Raleway;
 font-style: normal;
@@ -246,7 +250,7 @@ max-width: 166px;
 
 /*------ global layout --------*/
 
-.main {
+main {
 margin: 0 9.6% 0 9.6%;
 }
 
@@ -259,7 +263,7 @@ grid-template-columns: repeat(5, 1fr);
 
 .section-title {
 grid-column: 1/5;
-grid-row-start: 1; 
+grid-row-start: 1;
 }
 
 .project-caption {
@@ -414,17 +418,18 @@ grid-row-start: 1;
 }
 
 
-footer {
+footer a {
     position: absolute;
     left: 0;
     bottom: 40px;
     width: 100%;
-    color: #A0D3B6;
+    color: #41A76E;
     text-align: center;
     vertical-align: bottom;
     font-size: 1.4rem;
     line-height: 3.8rem;
     font-style: normal;
+    text-decoration: none;
     /* font-weight: bold; */
     /* font-family: Neuzeit Grotesk; */
     letter-spacing: 0.1rem;
