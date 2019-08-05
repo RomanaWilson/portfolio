@@ -178,10 +178,12 @@ float: right;
 }
 
 .project-caption h3 {
+padding-bottom: 3px;
 /* Romi to make spacing here */
 }
 
 .project-caption p {
+<<<<<<< HEAD
   font-family: Raleway;
   font-style: normal;
   font-weight: 300;
@@ -189,10 +191,21 @@ float: right;
   line-height: 14px;
   letter-spacing: 0.1em;
   color: #000000;
+=======
+font-family: Raleway;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.1em;
+color: #000000;
+padding-bottom: 25px;
+>>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
 /* Romi to make spacing here */
 }
 
 #red{
+<<<<<<< HEAD
   color: #FF3351;
   font-weight: 400;
 }
@@ -206,6 +219,23 @@ float: right;
   line-height: 42px;
   letter-spacing: 0.1em;
   color: #000000;
+=======
+color: #FF3351;
+font-weight: 900;
+text-decoration: underline;
+}
+
+.section-title {
+padding-bottom: 20px;
+text-transform: uppercase;
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.1em;
+color: #000000;
+>>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
 }
 
 .project-paragraph{
@@ -244,7 +274,11 @@ float: right;
 /*------ global layout --------*/
 
 main {
+<<<<<<< HEAD
   margin: 0 9.6% 0 9.6%;
+=======
+margin: 0 9.6% 0 9.6%;
+>>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
 }
 
 .project section {
@@ -255,8 +289,13 @@ main {
 }
 
 .section-title {
+<<<<<<< HEAD
   grid-column: 1/5;
   grid-row-start: 1; 
+=======
+grid-column: 1/5;
+grid-row-start: 1;
+>>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
 }
 
 .project-caption {
@@ -411,17 +450,18 @@ main {
 }
 
 
-footer {
+footer a {
     position: absolute;
     left: 0;
     bottom: 40px;
     width: 100%;
-    color: #A0D3B6;
+    color: #41A76E;
     text-align: center;
     vertical-align: bottom;
     font-size: 1.4rem;
     line-height: 3.8rem;
     font-style: normal;
+    text-decoration: none;
     /* font-weight: bold; */
     /* font-family: Neuzeit Grotesk; */
     letter-spacing: 0.1rem;
