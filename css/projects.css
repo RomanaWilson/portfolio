@@ -1,92 +1,100 @@
 /* project page*/
+@media screen and (max-width: 599px) {
 
-/* project page*/
-
-.project-main{
-  margin-left: 9.6%;
-  margin-right: 9.6%;
-
-  display: grid;
-  grid-template-columns: repeat (5, 1fr);
-  grid-column-gap:20px;
-  grid-template-rows: 140px 140px 140px 140px 140px;
-  grid-row-gap: 1px;
+  .colab{display: none;}
+  .text1{display: none;}
+  .peasinheart{display: none;}
+  .text2{display: none;}
 
 }
 
+@media screen and (min-width: 600px) {
+  .project-main{
+    margin-left: 9.6%;
+    margin-right: 9.6%;
+
+    display: grid;
+    grid-template-columns: repeat (5, 1fr);
+    grid-column-gap:20px;
+    grid-template-rows: 140px 140px 140px 140px 140px;
+    grid-row-gap: 1px;
+
+  }
+
+
+  /*  Meerkat */
+
+  .colab{
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+
+  .meerkat{
+      margin-bottom: 30px;
+      max-width: 167px;
+
+  }
+
+  .text1{
+    grid-column: 2/3;
+    grid-row-start: 4;
+  }
+
+  /*  peas in heart */
+  .peasinheart{
+    grid-column: 4/6;
+    grid-row: 4/5;
+  }
+
+  .peas{
+      margin-bottom: 30px;
+      height: 133.93px;
+
+  }
+  .text2{
+    width: 353px;
+    height: 60px;
+    grid-column: 4/6;
+    grid-row-start: 4;
+  }
+
+  /*  text */
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .project-name{
+    font-family: Neuzeit Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+  }
 
 
 
-/*  Meerkat */
+  .project-caption {
+    font-family: Neuzeit Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
 
-.colab{
-  grid-column: 2/3;
-  grid-row: 2/5;
-}
+    color: #000000;
 
-.meerkat{
-    margin-bottom: 30px;
-    max-width: 167px;
+  }
 
-}
-
-.text1{
-  grid-column: 2/3;
-  grid-row-start: 4;
-}
-/*  peas in heart */
- .peasinheart{
-   grid-column: 4/6;
-   grid-row: 4/5;
- }
-.peas{
-    margin-bottom: 30px;
-    height: 133.93px;
-
-}
-.text2{
-  width: 353px;
-  height: 60px;
-  grid-column: 4/6;
-  grid-row-start: 4;
-}
-
-/*  text */
-
-a:link {
-  text-decoration: none;
-}
-
-.project-name{
-  font-family: Neuzeit Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.1em;
-
-  color: #000000;
-}
-
-
-
-.project-caption {
-  font-family: Neuzeit Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.1em;
-
-  color: #000000;
-
-}
-
-.project-text{
-  font-family: Neuzeit Grotesk;
-  font-style: regular;
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  color: #828282;
+  .project-text{
+    font-family: Neuzeit Grotesk;
+    font-style: regular;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #828282;
+  }
 }
