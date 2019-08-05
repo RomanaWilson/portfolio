@@ -183,15 +183,6 @@ padding-bottom: 3px;
 }
 
 .project-caption p {
-<<<<<<< HEAD
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: #000000;
-=======
 font-family: Raleway;
 font-style: normal;
 font-weight: 300;
@@ -199,27 +190,11 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.1em;
 color: #000000;
-padding-bottom: 25px;
->>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
+padding-bottom: 20px;
 /* Romi to make spacing here */
 }
 
 #red{
-<<<<<<< HEAD
-  color: #FF3351;
-  font-weight: 400;
-}
-
-.section-title {
-  text-transform: uppercase;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.1em;
-  color: #000000;
-=======
 color: #FF3351;
 font-weight: 900;
 text-decoration: underline;
@@ -235,7 +210,6 @@ font-size: 36px;
 line-height: 42px;
 letter-spacing: 0.1em;
 color: #000000;
->>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
 }
 
 .project-paragraph{
@@ -274,12 +248,11 @@ color: #000000;
 /*------ global layout --------*/
 
 main {
-<<<<<<< HEAD
   margin: 0 9.6% 0 9.6%;
-=======
-margin: 0 9.6% 0 9.6%;
->>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
+  height: 100%;
 }
+
+/* Projects Layout */
 
 .project section {
   display: grid;
@@ -289,18 +262,70 @@ margin: 0 9.6% 0 9.6%;
 }
 
 .section-title {
-<<<<<<< HEAD
   grid-column: 1/5;
   grid-row-start: 1; 
-=======
-grid-column: 1/5;
-grid-row-start: 1;
->>>>>>> f719969d43cd3ecad1859796d938e9f4af0366e9
 }
 
 .project-caption {
 
 }
+
+.project footer {
+  display: flex;
+  justify-content: space-between;
+  /* grid-gap: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto; */
+}
+
+.project footer a {
+  display: flex;
+  height: 40px;
+
+  font-family: Neuzeit Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+
+.project footer a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.up {
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.next {
+  justify-content: flex-end;
+  padding-top: .5rem;
+  margin-right: 2rem;
+}
+
+.next p {
+  min-width: 10rem;
+}
+
+.up p {
+  padding-top: .5rem;
+}
+
+.up img {
+  max-width: 1.328rem; 
+  margin-right: 1rem;
+}
+
+.next img {
+  max-height: 1.7rem;
+}
+
 
 /* Homepage */
 
@@ -350,15 +375,18 @@ grid-row-start: 1;
 /*contact*/
 
 #contact {
+  height: 100vh;
   max-width: 540px;
   margin-right: auto;
   margin-left: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 92px);
+  grid-template-rows: repeat(5, 1fr) auto; 
   grid-gap: 20px;
-  grid-template-areas: "";
 }
+/* 92p */
+
+
 
 .sayhi {
     width:260px;
@@ -366,6 +394,7 @@ grid-row-start: 1;
     position: relative;
     grid-column: 2/4;
     grid-row-start: 2;
+    grid-row-end: 4;
     margin-left: 93px;
 }
 
@@ -408,6 +437,7 @@ grid-row-start: 1;
   position: relative;
   grid-column: 1/3;
   grid-row-start: 3;
+  grid-row-end: 5;
   margin-top: 57px;
 }
 
@@ -450,19 +480,50 @@ grid-row-start: 1;
 }
 
 
-footer a {
-    position: absolute;
-    left: 0;
-    bottom: 40px;
-    width: 100%;
+
+/* footer arrows */
+
+.download {
+/* define max dimension here */
+}
+
+/* contact footer */
+
+#contact footer {
+  grid-column: 2/3;
+  grid-row-start: 5;
+  height: 100;
+  width: 100%; 
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#contact footer a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact footer p {
     color: #41A76E;
-    text-align: center;
-    vertical-align: bottom;
+    /* text-align: center; */
+    /* vertical-align: bottom; */
     font-size: 1.4rem;
-    line-height: 3.8rem;
+    line-height: 2.6rem;
     font-style: normal;
-    text-decoration: none;
     /* font-weight: bold; */
     /* font-family: Neuzeit Grotesk; */
     letter-spacing: 0.1rem;
+    padding-left: 2em;
 }
+
+#contact footer img {
+  padding-left: 1em;
+}
+
+
+
+
