@@ -26,7 +26,7 @@
   grid-column: 4/6;
   grid-row-start: 6;
   padding-left: 44.2%;
-  justify-self: end;
+  /* justify-self: end; */
 }
 
 /* Other Standards */
@@ -341,7 +341,7 @@
   /* max-width: 454px; */
   width: 50%;
   justify-self: end;
-} 
+}
 
 #col_test2_adj1 {
   grid-column: 2/5;
@@ -386,6 +386,8 @@
   grid-row-start: 30;
 }
 
+
+/* Conclusion */
 #col_conclusion {
   grid-template-rows: repeat(26, 40px);
 }
@@ -400,6 +402,36 @@
   grid-row-start: 26;
 }
 
+#link-desktop{
+  font-family: Neuzeit Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: black;
+  /*placement- doesn't work*/
+  text-decoration: none;
+  grid-row-start: 30;
+  grid-column: 3/5;
+}
+
+#link-mobile{
+  font-family: Neuzeit Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FF8C8F;
+  text-decoration: none;
+  color: #FF8C8F;
+  /*placement- doesn't work*/
+  grid-row-start: 31;
+  grid-column: 3/5;
+  padding-left: 27,85%;
+}
 
 
 .up{
