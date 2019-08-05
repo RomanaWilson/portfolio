@@ -289,15 +289,32 @@ main {
   font-family: Neuzeit Grotesk;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.6rem;
   text-align: center;
   letter-spacing: 0.1em;
+
 }
 
 
 .project footer a:link {
   text-decoration: none;
+  color: black;
+}
+
+
+/* visited link */
+footer a:visited {
+  color: black;
+}
+
+/* mouse over link */
+footer a:hover {
+  color: #41A76E;
+}
+
+/* selected link */
+footer a:active {
   color: black;
 }
 
@@ -313,7 +330,7 @@ main {
 }
 
 .next p {
-  min-width: 10rem;
+  min-width: 12rem;
 }
 
 .up p {
