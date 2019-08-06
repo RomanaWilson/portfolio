@@ -429,7 +429,6 @@
   color: #FF8C8F;
   /*placement- doesn't work*/
   grid-row-start: 31;
-  grid-column: 3/5;
-  padding-left: 27,85%;
+  grid-column: 3/6;
+  margin-left: 27%;
 }
-
