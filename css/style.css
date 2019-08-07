@@ -93,34 +93,37 @@ nav {
 float: right;
 }
 
-.menu ul {
+.main-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  align-items: ;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.menu li {
-  float: right;
+.main-menu li {
+  /* float: right; */
 }
 
-.menu a {
-  float: left;
+.main-menu a {
+  /* float: left; */
   text-decoration: none;
   padding-right: 6.2rem;
-  padding-top: .9rem;
-  text-align: center;
+  padding-top: .2rem;
+  /* text-align: center; */
   color: #4F4F4F;
   font-size: 1.6rem;
+  line-height: 3.7rem;
 }
 
 .in {
   background-image: url("../images/in.png");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: 1em;
-  height: 1em;
-  margin-top: .5rem;
-  margin-right: 1.6em;
+  background-position: top left;
+  background-size: 1.4rem;
+  margin-right: 1.6rem;
 }
 
 .menu a:hover {
