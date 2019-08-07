@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: white;
-    font-family: Neuzeit Grotesk, sans-serif;
+    font-family: Neuzeit Grotesk, Arial, Helvetica, sans-serif;
     color: #000000;
     max-width: 1152px;
     min-height: 100%;
@@ -117,9 +117,9 @@ float: right;
   background-image: url("../images/in.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 1.6em;
-  height: 1.6em;
-  margin-top: .6rem;
+  background-size: 1em;
+  height: 1em;
+  margin-top: .5rem;
   margin-right: 1.6em;
 }
 
@@ -204,7 +204,7 @@ padding-bottom: 20px;
 
 .section-title {
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -216,7 +216,7 @@ padding-bottom: 20px;
 
 
 .project-paragraph{
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -349,18 +349,34 @@ footer a:active {
 
 /* Homepage */
 
-.home-container {
-  max-width: 386px;
-  padding-top: 8.2rem;
-  margin-right: auto;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 92px);
-  grid-gap: 20px;
-  grid-template-areas: "name  name  name"
-                       "about about about";
+@media screen and (max-width: 599px) {
+  .home-container {
+    max-width: 386px;
+    padding-top: 8.2rem;
+    margin-right: 9.6%;
+    margin-left: 9.6%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 92px);
+    grid-gap: 20px;
+    grid-template-areas: "name  name  name"
+                         "about about about";
+  }
+}
 
+@media screen and (min-width: 600px) {
+  .home-container {
+    max-width: 386px;
+    padding-top: 8.2rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 92px);
+    grid-gap: 20px;
+    grid-template-areas: "name  name  name"
+                         "about about about";
+  }
 }
 
 .name {
@@ -374,7 +390,7 @@ footer a:active {
 .about{ grid-area: about;}
 
 .lyly {
-  width: 296px;
+  max-width: 296px;
   /* grid-area: lily; */
   grid-column: 1/4;
   grid-row-start: 3;
