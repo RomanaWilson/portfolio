@@ -90,41 +90,47 @@ header {
 }
 
 nav {
-float: right;
+/* float: right; */
+display: flex;
+justify-content: space-between;
+align-content: center;
+align-items: center;
 }
 
 .main-menu ul {
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
-  align-items: ;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .main-menu li {
-  /* float: right; */
+
+  margin-bottom: 1em;
 }
 
 .main-menu a {
-  /* float: left; */
+
   text-decoration: none;
-  padding-right: 6.2rem;
-  padding-top: .2rem;
-  /* text-align: center; */
+  margin-right: 6.2rem;
   color: #4F4F4F;
   font-size: 1.6rem;
-  line-height: 3.7rem;
+
 }
 
 .in {
   background-image: url("../images/in.png");
   background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 1.4rem;
-  margin-right: 1.6rem;
+  background-position: left top;
+  background-size: 1.27rem;
+  padding-right: 1.4em;
+
+
 }
+
 
 .menu a:hover {
   color: #41A76E;
