@@ -1,434 +1,1034 @@
 
+/* ----------------------  UNIQUE COLAB TEXT STYLES  ----------------------- */
 
-/*--------- layout -------------*/
+/* Hero Text */
 
-/* Standards */
+/* hero title and hero text are defined globally
+as they are the same for both colab and peas.  The
+minor differnces (as pertian to colab) are defined
+here */
 
-/* Computers */
-.computers {
-  grid-column: 1/6;
-  grid-row-start: 2;
+@media screen and (min-width: 600px) {
+  .hero-title {
+     color: #FFFFFF;
+  }
+
+  .hero-text {
+     color: #FFFFFF;
+  }
 }
 
-.col_org {
-  grid-column: 1/3;
-  grid-row-start: 6;
-  padding-left: 24.08%;
+/* Persona Name Tags */
+/* Persona title are h4, but unique styles
+this oveide the default h4 styles. */
+
+.persona-name {
+  text-transform: capitalize;
+  font-family: Fira Sans;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
 }
 
-.col_col {
-  grid-column: 3/4;
-  grid-row-start: 6;
-  text-align: center;
+
+/* Prototype Links */
+
+/* Prototype links are h4 and use the h4
+default settings, these are adjustments to
+the defualt h4 settings */
+
+.prototype {
+  text-decoration: none;
 }
 
-.col_com {
-  grid-column: 4/6;
-  grid-row-start: 6;
-  padding-left: 44.2%;
-  /* justify-self: end; */
+.desktop-prototype {
+  font-weight: bold;
+  color: black;
 }
 
-/* Other Standards */
+/* Mobile Changes */
 
-
-.grid-centered {
-  grid-column: 2/5;
+#mobile-prototype {
+  color: #FF8C8F;
+  font-weight: bold;
+  color: #FF8C8F;
 }
 
-/* hero */
-#hero {
-  grid-template-rows: repeat(13, 40px);
+/* OCT box has a differnt cap-title font. */
+@media screen and (max-width:599px) {
+  .oct-box h3 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
 }
 
-#shape1{
-  max-width: 580px;
-  grid-column: 2/5;
-  grid-row-start: 3;
+
+
+/* etc  */
+
+#red{
+  color: #FF3351;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
-#colab-title {
-  grid-column: 3/5;
-  grid-row: 5;
+
+/* -------------- VERTICAL AND NON-STANDARD HORIZONTAL LAYOUT -------------- */
+
+/* ----- HERO ----- */
+
+/* Hero Layout Mobile */
+@media screen and (max-width: 599px) {
+  #colab_hero {
+    grid-template-rows: [shape1-mobile-start]
+                        31.25vmin
+                        [hero-group-start]
+                        auto
+                        [hero-group-end]
+                        40px
+                        [colab-hero-detail-start]
+                        50vmin
+                        [shape1-mobile-end]
+                        1fr
+                        ;
+
+    height: 100vh;
+    /* min-height: 469px; */
+    background: rgba(255, 209, 209, 0.1);
+  }
+
+  #colab-title {
+    justify-self: center;
+  }
 }
 
-#colab-desc {
-  grid-column: 3/5;
-  grid-row-start: 6;
+/*  Hero Layout Desktop */
+@media screen and (min-width: 600px) {
+  #colab_hero {
+    /* grid-template-rows: repeat(13, 40px); */
+    grid-template-rows: repeat(2, 40px)
+                        [hero-group-start]
+                        repeat(7, 40px)
+                        40px
+                        [hero-group-end colab-hero-detail-start]
+                        repeat(3, 40px);
+  }
 }
 
-#role {
-  grid-column: 2/3;
-  grid-row-start: 11;
+
+/* /////////////////////// SUBSECTION DEFINITION /////////////////////////// */
+/* /////////////////////// SUBSECTION DEFINITION /////////////////////////// */
+
+/* This defines the vertical span of a subgrid
+for the hero image group. Subgrids are grids
+placed inside of a grid. See styles.css
+for the horizontal definitions.
+
+Why the extra complication?  Although it's a lot
+more complicated to folow the subgrid is used here
+to keep items neetly aligned on the grid, but allow
+their section to stay a fixed width while the rest
+grid chnages sizes (since it is responsive.)
+*/
+
+/* Hero - Subsection Layout - Mobile */
+@media screen and (max-width: 599px) {
+  #colab-hero-group {
+    grid-row: hero-group-start / hero-group-end;
+    grid-template-rows: [title-start]
+                        23.43vmin
+                        [desc-start]
+                        auto
+                        ;
+  }
 }
 
-#mentor {
-  grid-column: 3/4;
-  grid-row-start: 11;
+/* Hero - Subsection Layout - Desktop and Tablet */
+@media screen and (min-width: 600px) {
+  #colab-hero-group {
+    grid-row: hero-group-start / hero-group-end;
+    justify-self: center;
+    width: 580px;
+    grid-template-rows: 40px 40px
+                        [title-start]
+                        40px
+                        [desc-start]
+                        repeat(5, 40px);
+  }
 }
 
-#prototype {
-  grid-column: 4/5;
-  grid-row-start: 11;
+/* /////////////////////// END SUBSECTION DEF ////////////////////////////// */
+/* /////////////////////// END SUBSECTION DEF ////////////////////////////// */
+
+
+/* Hero Items */
+
+#shape1 {
+  /* This is a subsection item!  It is placed in
+  the subgrid not the primary grid. */
+  width: 580px;
+  justify-self: center;
 }
 
-/* summary */
-#col_summary {
-  grid-template-rows: repeat(15, 40px);
-}
-
-#col_sum {
-  grid-column: 2/5;
-  grid-row-start: 7;
-}
-
-/* Research */
-#col_research {
-  grid-template-rows: repeat(22, 40px);
-}
-
-#graph{
-  max-width: 538px;
-  grid-column: 3/6;
-  grid-row-start: 2;
-}
-
-#col_dem {
-  grid-column: 1/2;
-  grid-row-start: 2;
+#shape1-mobile { /* Mobile only */
+  grid-row: shape1-mobile-start / shape1-mobile-end;
+  max-width: 84.0625%;
   justify-self: end;
 }
 
-#col_usage {
-  grid-column: 1/2;
-  grid-row-start: 5;
+#colab-title {
+  /* This is a subsection item!  It is placed in
+  the subgrid not the primary grid. */
+  grid-row-start: title-start;
 }
+
+#colab-desc {
+  /* This is a subsection item!  It is placed in
+  the subgrid not the primary grid. */
+  grid-row-start: desc-start;
+}
+
+
+#colab-hero-detail {
+  /* This defines a NEW subgrid for role, mentor,
+  and prototype.  It is placed ont the normal
+  section grid. It is a single row grid however
+  and does not require definitions here on the
+  vertical grid layout.  */
+  justify-self: center;
+  width: 540px;
+  grid-row-start: colab-hero-detail-start;
+}
+
+@media screen and (max-width: 599px) {
+  #colab-hero-detail {
+    justify-self: center;
+    text-align: center;
+    width: auto;
+  }
+}
+
+
+/* ---- SUMMARY ---- */
+
+/* Sumamry Mobile */
+@media screen and (max-width: 599px) {
+  #col_summary {
+    grid-template-rows: [section-title]
+                        5vmin
+                        [oct-box-start]
+                        minmax(40px, auto)
+                        [oct-box-end]
+                        40px
+                        [summary-text-start]
+                        auto
+                        [summary-text-end]
+                        40px;
+  }
+}
+
+/* Summary - Desktop and Tablet */
+@media screen and (min-width: 600px) {
+  #col_summary {
+    grid-template-rows: [section-title]
+                        40px
+                        [computers-start]
+                        auto
+                        [computers-end oct-box-start]
+                        minmax(40px, auto)
+                        [oct-box-end summary-text-start]
+                        auto
+                        [summary-text-end]
+                        40px;
+  }
+}
+
+
+
+/* Computers (O.C.T. Box) */
+
+/* The OCT box is just a box that contains the
+"Organize, Colaborate, Talk" details that are
+used a few times throughout the project. It changes
+a bit in each instance but i reused the code in
+sketches (only on mobile) and in the conclusion.
+Resuing also helps to keep the spacing consistent
+in differnt occurences - both for horizontal and
+vertical (when mobile).  Changes here also affect
+elements in skethces (mobile only) and the
+conclusion. */
+
+.computers {
+  grid-row-start: 2;
+}
+
+.oct-box {
+  display: flex;
+  justify-content: space-around;
+  grid-row: oct-box-start / oct-box-end;
+}
+
+@media screen and (max-width: 599px) {
+  .oct-box {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.oct-box-img {
+  margin-top: 40px;
+}
+
+#col-communication-img {
+  margin-top: 60px;
+}
+
+/* Summary Text*/
+#col_sum {
+  /* centered text */
+  grid-row-start: summary-text-start;
+}
+
+#col-sum-background-box { /* Mobile Only */
+  grid-row-start: summary-text-start;
+}
+
+
+/* ---- RESEARCH ---- */
+/* Mobile */
+@media screen and (max-width: 599px){
+  #col_research {
+    grid-template-rows: [section-title]
+                        16vmin
+                        [graph-start]
+                        auto
+                        [graph-end]
+                        5vmin
+                        [pers-img-start]
+                        repeat(5, 40px) 3vmin
+                        [description-start pers-back-start]
+                        auto
+                        [frustration-start]
+                        auto
+                        [goals-start]
+                        auto
+                        [pers-back-end]
+                        40px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px){
+  #col_research {
+    grid-template-rows: [section-title]
+                        repeat(2, 40px)
+                        [graph-start]
+                        auto
+                        [graph-end]
+                        40px
+                        [demo-start]
+                        auto
+                        [usage-start]
+                        auto 40px
+                        [persona-start]
+                        40px
+                        [pers-img-start]
+                        repeat(4, 40px)
+                        [description-start]
+                        auto
+                        [frustration-start]
+                        auto
+                        [goals-start]
+                        auto 40px;
+  }
+
+}
+
+/* Destop */
+@media screen and (min-width: 900px) {
+  #col_research {
+    grid-template-rows: [section-title]
+                        40px
+                        [graph-start demo-start]
+                        repeat(3, 40px)
+                        [usage-start]
+                        repeat(4, 40px)
+                        [graph-end persona-start]
+                        40px
+                        [pers-img-start]
+                        repeat(4, 40px)
+                        [description-start]
+                        repeat(2, 40px)
+                        [frustration-start]
+                        repeat(3, 40px)
+                        [goals-start]
+                        repeat(4, 40px);
+  }
+}
+
+/* Research Items */
+#graph{
+  max-width: 538px;
+  justify-self: right;
+  grid-row-start: graph-start;
+}
+
+#col_dem {
+  /* caption-left */
+  grid-row-start: demo-start;
+}
+
+#col_usage {
+  /* caption-left */
+  grid-row-start: usage-start;
+}
+
+/* Personas */
 
 #col_pers {
-  grid-column: 1/2;
-  grid-row-start: 9;
+  grid-row-start: persona-start;
 }
 
-#col_pers_img1 {
-  grid-column: 2/3;
-  grid-row-start: 10;
+/* Person Images - Desktop and Tablet */
+
+/* .col-pers-img-fig is palced on grid - it's
+children, the desktop and mobile imgs as well as the
+img caption are absolute positioned within the
+.col-pers-img-fig box*/
+
+.pers-img-fig {
+  /* pers-narrow */
+  grid-row-start: pers-img-start;
+  position: relative;
+  justify-self: center;
+  width: 334px;
 }
+
+.pers-img-cap {
+  position: absolute;
+  left: 0;
+  top: 47px;
+}
+
+.pers_img {
+  position: absolute;
+  left: 84px;
+  top: 0;
+  max-width: 166px
+}
+
+/* Pers Images - Mobile */
+
+@media screen and (max-width: 599px) {
+  .pers-img-fig {
+    width: 265px;
+    /* height: 217px; */
+  }
+
+  .pers-img-cap {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .pers_img {
+    position: absolute;
+    left: 33px;
+    top: 30px;
+    max-width: 199px;
+  }
+}
+
+.persona-img{
+  /* max-width: 166px;
+  justify-self: center; */
+}
+
+/* Other Persona Elements */
 
 #col_juniorc {
-  grid-column: 1/4;
-  grid-row-start: 14;
-  justify-self: center;
-  width: 317px;
+  /* pers-wide */
+  grid-row-start: description-start;
 }
 
 #col_frus1 {
-  grid-column: 2/3;
-  grid-row-start: 16;
+  /* pers-narrow */
+  grid-row-start: frustration-start;
 }
 
 #col_goals1 {
-  grid-column: 2/3;
-  grid-row-start: 19;
+  /* pers-narrow */
+  grid-row-start: goals-start;
 }
 
-#col_pers_img2 {
-  grid-column: 4/5;
-  grid-row-start: 10;
+#col_pers_background {
+  grid-row: pers-back-start / pers-back-end
 }
 
 #col_seniorg {
-  grid-column: 3/6;
-  grid-row-start: 14;
-  justify-self: center;
-  width: 317px;
+  /* pers-wide */
+  grid-row-start: description-start;
 }
 
 #col_frus2 {
-  grid-column: 4/5;
-  grid-row-start: 16;
+  /* pers-narrow */
+  grid-row-start: frustration-start;
 }
 
 #col_goals2 {
-  grid-column: 4/5;
-  grid-row-start: 19;
+  /* pers-narrow */
+  grid-row-start: goals-start;
 }
 
-/* information architecture */
+/* ---- INFORMATION ARCHITECTURE ---- */
 #col_info_architecture {
   grid-template-rows: repeat(11, 40px);
 }
 
 #col_user_wants_col {
-  grid-column: 1/3;
+  /* subsection title */
   grid-row-start: 2;
 }
 
 #col_flow1 {
-  grid-column: 1/6;
+  /* full width img */
   grid-row-start: 3; }
 
 #col_user_wants_organize {
-  grid-column: 1/3;
+  /* subsection title */
   grid-row-start: 7;
 }
 
 #col_flow2 {
-  grid-column: 1/6;
+  /* full-width img */
   grid-row-start: 8; }
 
 #col_legend_title {
-  grid-column: 5/6;
   grid-row-start: 10;
   justify-self: end;
 }
 
 #col_legend {
-  grid-column: 4/6;
   grid-row-start: 11;
   justify-self: end;
   margin-top: -20px;
 }
 
-/*  Prototype and Testing */
+/* ---- SKETCHES (Mobile Only) ---- */
 
-#col_proto_testing {
-  grid-template-rows: repeat(41, 40px);
+@media screen and (max-width: 599px) {
+  #col_sketches {
+    grid-template-rows: [section-title]
+                        12vmin
+                        [oct-box-start]
+                        auto
+                        [oct-box-end]
+                        12vmin;
+  }
 }
 
+/* O.C.T. Box defined in Summary Section and is reused in Skethces html */
+
+/*  ---- PROTOTYPE AND TESTING (Testing #1)---- */
+
+/* P&T - Mobile */
+@media screen and (max-width: 599px) {
+  #col_proto_testing {
+    grid-template-rows: [section-title]
+                        40px
+                        [wireframes-start]
+                        7vmin
+                        [wireframe1-start]
+                        auto
+                        [adjustments1-start]
+                        auto 1vmin
+                        [wireframe2-start]
+                        auto
+                        [wireframe2-end adjustments2-start]
+                        auto 40px;
+  }
+}
+
+/* P&T - Desktop and Tablet */
+@media screen and (min-width: 600px) {
+  #col_proto_testing {
+    grid-template-rows: [section-title]
+                        40px 40px
+                        [web-sketch-start]
+                        auto 30px
+                        [dash-start]
+                        40px
+                        [dash-sketch-start]
+                        auto 30px
+                        [test1-start]
+                        40px
+                        [wireframe1-start]
+                        auto
+                        [adjustments1-start]
+                        auto
+                        [wireframe2-start]
+                        repeat(5, auto)
+                        [demo-start]
+                        repeat(2, auto)
+                        [wireframe2-end adjustments2-start]
+                        40px
+                        [demo-end]
+                        40px;
+  }
+}
+
+
 #col_pwebsite {
-  grid-column: 1/2;
+  /* subsection title */
   grid-row-start: 2;
 }
 
 #col_sketch1 {
-  grid-column: 1/6;
-  grid-row-start: 3;
+  /* full width img */
+  grid-row-start: web-sketch-start;
 }
 
 #col_pdash {
-  grid-column: 1/2;
-  grid-row-start: 13;
+  /* subsectiont title */
+  grid-row-start: dash-start;
 }
 
 #col_sketch2 {
-  grid-column: 1/6;
-  grid-row-start: 14;
+  /* full width img */
+  grid-row-start: dash-sketch-start;
 }
 
 #col_testing1 {
-  grid-column: 1/2;
-  grid-row-start: 24;
+  /* subsection title */
+  grid-row-start: test1-start;
+}
+
+#col_wireframe_sub {
+  /* subsection title */
+  grid-row-start: wireframes-start;
 }
 
 #col_wireframe1 {
-  grid-column: 2/5;
-  grid-row-start: 25;
+  /* full width img */
+  grid-row-start: wireframe1-start;
 }
 
 #col_adjustments1 {
-  grid-column: 2/5;
-  grid-row-start: 32;
+  /* centered text */
+  grid-row-start: adjustments1-start;
 }
 
 #col_wireframe2 {
-  grid-column: 2/5;
-  grid-row-start: 33;
+  /* centered img */
+  grid-row: wireframe2-start / wireframe2-end;
 }
 
 #col_adjustments2 {
-  grid-column: 2/5;
-  grid-row-start: 40;
+  /* centered text */
+  grid-row-start: adjustments2-start;
 }
 
 #col_demogrphics {
-  grid-column: 5/6;
-  grid-row-start: 38;
+  /* caption-right */
+  grid-row: demo-start / demo-end;
 }
 
-/* Visual Design */
+/* ---- VISUAL DESIGN ---- */
 
-#col_visual_design {
-  grid-template-rows: repeat(38, 40px);
+/* Visual Design - Mobile */
+@media screen and (max-width: 599px) {
+  #col_visual_design {
+    grid-template-rows: [section-title background-start]
+                        5vmin 5vmin
+                        [visd-text-start]
+                        auto
+                        [background-end]
+                        12.5vmin
+                        [color-start]
+                        4vmin
+                        [color-img-start]
+                        auto 16vmin
+                        [typo-start]
+                        14vmin
+                        [typo-img-start]
+                        auto
+                        [typo-img-end]
+                        14vmin
+                        [illustrations-start]
+                        auto 4vmin
+                        [meerkat1-start]
+                        auto 4vmin
+                        [computer-start]
+                        auto 14vmin;
+  }
+}
+
+/* Visual Design - Tablet */
+@media screen and (min-width: 600px) {
+  #col_visual_design {
+    grid-template-rows: [section-title]
+                        40px
+                        [visd-text-start]
+                        repeat(2, auto) 40px
+                        [typo-start]
+                        40px
+                        [typo-img-start]
+                        repeat(8, auto)
+                        [typo-img-end]
+                        40px
+                        [color-start]
+                        40px
+                        [color-img-start]
+                        repeat(6, 40px)
+                        [illustrations-start]
+                        40px
+                        [meerkat1-start]
+                        repeat(9, 40px)
+                        [computer-start]
+                        auto 40px;
+  }
+}
+
+/* Visual Design - Desktop */
+@media screen and (min-width: 900px) {
+  #col_visual_design {
+    grid-template-rows: [section-title]
+                        40px
+                        [visd-text-start]
+                        repeat(2, auto) 40px
+                        [typo-start typo-img-start]
+                        repeat(8, auto)
+                        [typo-img-end]
+                        40px
+                        [color-start]
+                        40px
+                        [color-img-start]
+                        repeat(6, 40px)
+                        [illustrations-start]
+                        40px
+                        [meerkat1-start]
+                        repeat(9, 40px)
+                        [computer-start]
+                        repeat(8, 40px);
+  }
 }
 
 #col_visd_text {
-  grid-column: 2/5;
-  grid-row-start: 2;
+  /* centered text */
+  grid-row-start: visd-text-start;
+}
+
+#col_vd_background {
+  grid-row: background-start / background-end;
 }
 
 #col_typo {
-  grid-column: 1/2;
-  grid-row-start: 5;
+  /* subsection title */
+  grid-row-start: typo-start;
 }
 
 #col_typo_img {
-  grid-column: 2/5;
-  grid-row-start: 5;
+  /* centered img */
+  grid-row: typo-img-start / typo-img-end;
+}
+
+#col_typo_img_mobile {
+  /* centered img */
+  grid-row: typo-img-start / typo-img-end;
+  width: 77.3035714285714%;
+  justify-self: center;
+  /* fyi - ideal height: 328.56px; */
 }
 
 #col_typo_cap {
-  grid-column: 5/6;
-  grid-row-start: 10;
+  /* caption-right */
+  grid-row: 10/14;
 }
 
 #col_color {
-  grid-column: 1/3;
-  grid-row-start: 14;
+  /* subsection title */
+  grid-row-start: color-start;
 }
 
 #col_color_img {
-  grid-column: 2/5;
-  grid-row-start: 15;
-  /* max-width: 377.53px; */
-  max-width: 70%;
+  /* Centered image */
+  grid-row-start: color-img-start;
+  max-width: 70%; /* max-width: 377.53px; */
 }
 
+#col_color_img_mobile {
+  /* Centered image */
+  grid-row-start: color-img-start;
+  width: 77.3035714285714%;
+  justify-self: center;
+
+}
+
+
 #col_color_cap {
-  grid-column: 5/6;
+  /* caption-right */
   grid-row-start: 17;
+  min-width: 166px;
+  justify-self: right;
 }
 
 #col_illust {
-  grid-column: 1/3;
-  grid-row-start: 21;
+  /* subsection title */
+  grid-row-start: illustrations-start;
 }
 
 #meerkat1{
-  grid-column: 2/4;
-  grid-row-start: 22;
+  grid-row-start: meerkat1-start;
+  padding: 10px;
   /* max-width: 359.39px; */
-  margin-left: -15%;
+}
+
+@media screen and (min-width: 600px) {
+  #meerkat1{
+    margin-left: -15%;
+  }
 }
 
 #meerkat2{
-  grid-column: 4/6;
   grid-row-start: 27;
   /* max-width: 356px; */
 }
 
 #col_computer_vd {
-  grid-column: 1/4;
-  grid-row-start: 32;
+  grid-row-start: computer-start;
   /* max-width: 540px; */
 }
 
 #meercats {
-  grid-column: 5/6;
+  /* caption-right */
   grid-row-start: 23;
+  min-width: 166px;
+  justify-self: right;
 }
 
-/* Testing #2 */
+#meercats-mobile {
+  grid-row-start: illustrations-start;
+}
 
-#col_test2 {
-  grid-template-rows: repeat(32, 40px);
+/* ---- TESTING #2 ---- */
+
+/* T2 - Mobile */
+@media screen and (max-width: 599px) {
+  #col_test2 {
+    grid-template-rows: [test-back-start section-title]
+                        10vmin 10vmin auto
+                        [hi-small2-start]
+                        auto
+                        [adj1-start]
+                        repeat(3, 40px)
+                        [hi-big1-start]
+                        auto
+                        [adj2-start]
+                        60px
+                        [test-back-end]
+                        40px;
+  }
+}
+
+/* T2 - Desktop */
+@media screen and (min-width: 600px) {
+  #col_test2 {
+    grid-template-rows: [section-title]
+                        40px 40px
+                        [hi-small2-start]
+                        auto
+                        [adj1-start]
+                        repeat(3, 40px)
+                        [hi-big1-start]
+                        auto
+                        [adj2-start]
+                        40px 40px
+                        [hi-big2-start]
+                        repeat(4, auto)
+                        [demo-start]
+                        repeat(3, auto)
+                        [hi-big2-end adj3-start]
+                        40px
+                        [demo-end]
+                        40px
+                        [proto-start]
+                        auto 10px 40px;
+  }
+}
+
+#col_test_background {
+  grid-row: test-back-start / test-back-end
 }
 
 #col_test2_cap {
-  grid-column: 1/2;
+  /* subsection title */
   grid-row-start: 2;
 }
 
-#hi-small1{
-  grid-column: 1/6;
+#hi-small1 {
   grid-row-start: 3;
-  /* max-width: 454px; */
-  width: 50%;
 }
 
-#hi-small2{
-  grid-column: 1/6;
-  grid-row-start: 3;
-  /* max-width: 454px; */
-  width: 50%;
-  justify-self: end;
+@media screen and (min-width: 900px) {
+  #hi-small1 {
+    width: 50%; /* max-width: 454px; */
+  }
+}
+
+#hi-small2 {
+  grid-row-start: hi-small2-start;
+}
+
+@media screen and (min-width: 900px) {
+  #hi-small2 {
+    width: 50%; /* max-width: 454px; */
+    justify-self: end;
+  }
 }
 
 #col_test2_adj1 {
-  grid-column: 2/5;
-  grid-row-start: 9;
+  /* subsection title */
+  grid-row-start: adj1-start;
 }
 
 #hi-big1 {
-  grid-column: 2/5;
-  grid-row-start: 12;
+  /* centered img */
+  grid-row-start: hi-big1-start;
   max-width: 540px;
 }
 
 #col_test2_adj2 {
-  grid-column: 2/5;
-  grid-row-start: 19;
+  /* subsection title */
+  grid-row-start: adj2-start;
 }
 
 #hi-big2 {
-  grid-column: 2/5;
-  grid-row-start: 20;
+  /* centered img */
+  grid-row: hi-big2-start / hi-big2-end;
   max-width: 540px;
 }
 
 #col_test2_adj3 {
-  grid-column: 2/5;
-  grid-row-start: 27;
+  /* subsection title */
+  grid-row-start: adj3-start;
 }
 
 #col_test2_dem {
-  grid-column: 5/6;
-  grid-row-start: 24;
+  /* caption-right */
+  grid-row: demo-start / demo-end;
+}
+
+/* Clickable Prototype Box */
+
+#col_click_proto {
+  /* This box is in the grid - It's children (below)
+  are absolute positioned insde this box */
+  grid-row-start: proto-start;
+  justify-self: center;
+  width: 540px;
+  height: 127px;
+  position: relative;
 }
 
 #col_shape2 {
-  grid-column: 3/4;
-  grid-row-start: 29;
-  margin-left: -48px;
+position: absolute;
+width: 166px;
+left: 137px;
+top: 0;
 }
 
-#col_prototypes {
-  grid-column: 3/4;
-  grid-row-start: 30;
+#link-desktop {
+position: absolute;
+left: 201px;
+top: 64px;
+}
+
+#link-mobile {
+position: absolute;
+left: 284px;
+top: 102px;
 }
 
 
-/* Conclusion */
-#col_conclusion {
-  grid-template-rows: repeat(26, 40px);
+/* ---- CONCLUSION ---- */
+
+/* Conclusion - Mobile */
+@media screen and (max-width: 599px) {
+  #col_conclusion {
+    grid-template-rows: [section-title]
+                        5vmin
+                        [bottom-shape-start]
+                        10vmin
+                        [text-start]
+                        auto 20vmin
+                        [prototype]
+                        15vmin
+                        [bottom-shape-end]
+                        5vmin
+                        ;
+  }
 }
 
-/* Computers is set by class */
+
+/* Conclusion - Tablet */
+@media screen and (min-width: 600px) {
+  #col_conclusion {
+    grid-template-rows: [section-title]
+                        40px auto
+                        [oct-box-start]
+                        40px
+                        [oct-box-end text-start]
+                        auto
+                        40px 40px
+                        40px 40px
+                        ;
+  }
+}
+
+
+/* Conclusion - Desktop */
+@media screen and (min-width: 900px) {
+  #col_conclusion {
+    grid-template-rows: [section-title]
+                        40px auto
+                        [oct-box-start]
+                        40px
+                        [oct-box-end]
+                        40px
+                        [text-start]
+                        auto
+                        40px 40px
+                        ;
+  }
+}
+
+/* Computers positioning is set by it's class (see top) -
+It is always in second row of grid - 2nd row should
+be auto to let computers fill 2nd row. */
+
+/* O.C.T. Box positon points are defined by it's
+class (see top) and is is used here as well as in
+Skethes (mobile) and in Summary.  You don;t see
+O.C.T. box defined here but O.C.T box can be used
+anywhere with oct-box-start / oct-box-end */
 
 #col_con_text {
-  grid-row-start: 8;
+  /* centered text */
+  grid-row-start: text-start;
 }
 
-#col_outro {
-  grid-row-start: 26;
+#bottom-shape-mobile {
+  grid-row: bottom-shape-start/ bottom-shape-end;
+  align-self: end;
 }
 
-#link-desktop{
-  font-family: Neuzeit Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.1em;
-  color: black;
-  /*placement- doesn't work*/
-  text-decoration: none;
-  grid-row-start: 30;
-  grid-column: 3/5;
+#prototpe-link {
+  /* centered text */
+  grid-row-start: prototype;
 }
 
-#link-mobile{
-  font-family: Neuzeit Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #FF8C8F;
-  text-decoration: none;
-  color: #FF8C8F;
-  /*placement- doesn't work*/
-  grid-row-start: 31;
-  grid-column: 3/6;
-  margin-left: 27%;
-}
+/*  FIN */

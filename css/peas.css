@@ -1,141 +1,133 @@
-.hero-title{
+/* ------------------------  UNIQUE PEAS STYLES  ------------------------- */
+
+.green{
   font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-
-.hero-text{
-  font-family: Fira Sans;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 23px;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-
-.bold-title{
-  text-transform: uppercase;
-  font-family: Neuzeit Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.1em;
-  color: #000000;
-
-}
-.project-caption p {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-
-#green{
-  font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.1em;
   color:#6ba432;
-
 }
+
 /* mouse over link */
 a:hover {
   color: #3A4F30;
 }
 
 
-.infotext{
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.1em;
-  color: #6BA432;
-}
+/* -------------- VERTICAL AND NON-STANDARD HORIZONTAL LAYOUT -------------- */
 
-/*--------- global -------------*/
+/* ---- MAIN ---- */
+
+/* This redfines the "main" section for peas.
+This makes the footer "sticky"  so that it is always
+at bottom unless the content overflows the bottom
+of the window.  This only applies to peas since
+colab will never have this problem :) */
 
 main {
-  margin: 0 9.6% 0 9.6%;
-  }
-
-.project section {
+  min-height: 100vh;
   display: grid;
-  grid-gap: 20px;
-  margin-bottom: 20px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr auto;
 }
 
-.section-title {
-  grid-column: 1/3;
+/* ---- HERO ---- */
+
+/* First setting postion of Hero Section
+in main layout */
+
+#peas-hero {
   grid-row-start: 1;
 }
 
-.project-caption {
+/* Then we set Template for the children of
+the Hero Section Mobile and Desktop*/
 
+/* Hero - Mobile */
+@media screen and (max-width: 599px) {
+  #peas-hero { /* You can be one too! Just eat your vegetables!*/
+    grid-template-rows: 68px
+                        [section-title]
+                        minmax(68px, auto)
+                        [description-start]
+                        minmax(0, auto) 0px
+                        [shape-start]
+                        minmax(0, auto)
+                        [shape-end]
+                        40px
+                        [captions]
+                        minmax(0, auto)
+                        1fr
+                        ;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #peas-hero {
+    grid-template-rows: 68px
+                        [section-title]
+                        68px
+                        [description-start]
+                        minmax(0, auto) 0px
+                        [shape-start]
+                        minmax(0, auto)
+                        [shape-end]
+                        0px
+                        [captions]
+                        minmax(0, auto)
+                        0px
+                        [infotext-start]
+                        1fr
+                        ;
+  }
+}
+
+/* Hero Objects */
+#peas-shape1 {
+  max-width: 910px;
+  grid-row: shape-start / shape-end;
+}
+
+#peas-title {
+  /* grid-column: 1/-1; */
+  grid-row-start: section-title;
+}
+
+#peas-desc {
+  /* grid-column: 2/5; */
+  grid-row-start: description-start;
+}
+
+#peas-hero-detail {
+  grid-row-start: captions;
+}
+
+@media screen and (max-width: 599px) {
+  #peas-role {
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #peas-website {
+    justify-self: center;
+    text-align: center;
+  }
 }
 
 
-/* hero */
-#hero {
-  grid-template-rows: repeat(10, 68px);
-}
-
-#shape1{
-  max-width: 580px;
-  grid-column: 1/6;
-  grid-row-start: 4;
-}
-
-#colab-title {
-  grid-column: 1/3;
-  grid-row: 2;
-}
-
-#colab-desc {
-  grid-column: 2/5;
-  grid-row-start: 3;
-}
-
-#role {
-  padding-top: 68px;
-  grid-column: 2/3;
-  grid-row-start: 7;
-}
-
-#location {
-  padding-top: 68px;
-  grid-column: 3/4;
-  grid-row-start: 7;
-}
-
-#website {
-  padding-top: 68px;
-  grid-column: 4/5;
-  grid-row-start: 7;
-}
-
-#peas_infotext {
+#peas-infotext {
   /* padding-top: 25px; */
-  grid-column: 2/4;
-  grid-row-start: 9;
+  grid-row-start: infotext-start;
 }
 
 /*----PICTURES-----*/
 
 #shape1{
-  padding-top: 40px;
-  max-width: 910px;
+
+}
+
+footer {
+  grid-row-start: 2;
 }

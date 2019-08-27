@@ -1,0 +1,20 @@
+
+/* Device Exclusion Classes */
+
+@media screen and (max-width: 599px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .desktop-only {
+    display: none;
+  }
+}

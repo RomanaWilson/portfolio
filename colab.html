@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/colab.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -49,54 +50,72 @@
       <!-- Side-->
       <!-- <div class="vertical-text">
         <div>
-          <H6 class="top"> ROMI  WILSON - CO LAB<H6>
+          <aside class="class="top"> ROMI  WILSON - CO LAB">
+
+          </aside>
         </div>
 
       </div> -->
       <!-- Case Study -->
 
       <main class="project">
-        <section id = "hero" class = "section">
+        <section id = "colab_hero">
           <!--HERO SECTION-->
-          <img id="shape1" src="images/co lab/shape1.svg" alt="">
-          <h1 id = "colab-title" class="hero-title">CO LAB</h1>
-          <p id = "colab-desc" class="hero-text">Co lab is a cloud storage application designed to humanize collaboration and communication and to help build organization within projects. </p>
+          <img id="shape1-mobile" class ="sub-sec-span mobile-only" src="images/co lab/mobile/comingsoon.svg" alt="">
+          <div id = "colab-hero-group" class = "hero fixed-width-centered">
+            <img id = "shape1" class = "sub-sec-span mobile-hidden" src="images/co lab/shape1.svg" alt="">
+            <h1 id = "colab-title" class="sub-sec-left hero-title">CO LAB</h1>
+            <p id = "colab-desc" class="sub-sec-left hero-text">Co lab is a cloud storage application designed to humanize collaboration and communication and to help build organization within projects.
+              <br class="mobile-only">
+              <br class="mobile-only">
+              <span class="hero-text-addendum mobile-only">Full project available on desktop view.</span>
+            </p>
+          </div>
+
+
           <!--the little text-->
-
-          <div class = "project-caption" id = "role">
-            <h3  class="bold-title">ROLE</h3>
-            <p>Research<br>
-                                      UX Design<br>
-                                      UI Design<br>
-                                      Illustrations
-            </p>
-          </div>
-
-          <div class = "project-caption" id = "mentor">
-            <h3 class="bold-title">mentor</h3>
-            <p>Chris Gillis</p>
-
-            </p>
-          </div>
-
-          <div class = "project-caption" id = "prototype">
-            <h3 class="bold-title">prototype</h3>
-            <a href="https://www.figma.com/proto/kALVjG06FKhQ6qmPNfsxdE/CO-LAB-desktop%2Flaptop-(after)?node-id=1%3A3&scaling=min"><p class="project-caption" id="red">co lab<br>
-
-            </p></a>
+          <div id = "colab-hero-detail" class = "hero-detail fixed-width-centered">
+            <div class = "sub-col1 project-caption">
+              <h3  class="caption-title">ROLE</h3>
+              <p>Research<br>
+                                        UX Design<br>
+                                        UI Design<br>
+                                        Illustrations
+              </p>
+            </div>
+            <div class = "sub-col2 project-caption mobile-hidden">
+              <h3 class="caption-title">mentor</h3>
+              <p>Chris Gillis</p>
+              </p>
+            </div>
+            <div class = "sub-col3 project-caption mobile-hidden">
+              <h3 class="caption-title">prototype</h3>
+              <a href="https://www.figma.com/proto/kALVjG06FKhQ6qmPNfsxdE/CO-LAB-desktop%2Flaptop-(after)?node-id=1%3A3&scaling=min"><p class="project-caption" id="red">co lab<br>
+              </p></a>
+            </div>
           </div>
         </section>
 
         <!--SUMMARY-->
         <section id = "col_summary">
           <h2 class="section-title">summary</h2>
-          <img class="computers" src="images/co lab/computers.png" alt="">
-          <h3 class="bold-title col_org">organization</h3>
-          <h3 class="bold-title col_col">collaboration</h3>
-          <h3 class="bold-title col_com">communiation</h3>
-          <p id = "col_sum" class="project-paragraph">Utilizing a basic analysis of the file storage industry, competitive analysis of key players, as well as user research, I have identified gaps in the market and found several user frustrations with currently available products. Co lab is a cloud storage application designed to humanize collaboration and communication between teams, customers and vendors. My research demonstrated that the user is being overwhelmed by multiple tools and is losing productivity while working on projects. The main principle of Co lab is to facilitate effective collaboration between users and keep their projects organized in an easy to use structure. The application provides three viewpoints: Files, Co lab, and Talk. All of these features are unique and interconnected to create an easy workflow and help users to increase their effectivity.
-          <br>  <br>
-          Understanding virtual communication is a big challenge, and it has a long way to go. Co lab is a pitch of how I would approach this emerging issue. Virtual communication can get very rigid and unclear. In this project I wanted to bring simplicity and fun.
+          <img class="full-width-img computers mobile-hidden" src="images/co lab/computers.png" alt="">
+          <!-- O.C.T. Box -->
+          <div class="full-width-img oct-box">
+            <img  class="mobile-only" src="images/co lab/mobile/com_org.png" alt="">
+            <h3 class="caption-title">organization</h3>
+            <img class="oct-box-img mobile-only" src="images/co lab/mobile/com_col.png" alt="">
+            <h3 class="caption-title">collaboration</h3>
+            <img id = "col-communication-img" class="oct-box-img mobile-only" src="images/co lab/mobile/com_talk.png" alt="">
+            <h3 class="caption-title">communication</h3>
+          </div>
+          <!-- End of O.C.T. Box -->
+          <div id = "col-sum-background-box" class = "hero mobile-only mobile-grey-back"></div>
+          <p id = "col_sum" class="centered-text project-paragraph">
+            <span class= "mobile-hidden">Utilizing a basic analysis of the file storage industry, competitive analysis of key players, as well as user research, I have identified gaps in the market and found several user frustrations with currently available products. Co lab is a cloud storage application designed to humanize collaboration and communication between teams, customers and vendors. My research demonstrated that the user is being overwhelmed by multiple tools and is losing productivity while working on projects. The main principle of Co lab is to facilitate effective collaboration between users and keep their projects organized in an easy to use structure. The application provides three viewpoints: Files, Co lab, and Talk. All of these features are unique and interconnected to create an easy workflow and help users to increase their effectivity.
+            </span>
+            <br class= "mobile-hidden">  <br class= "mobile-hidden">
+            <span class = "mobile-bold">Understanding </span> virtual communication is a big challenge, and it has a long way to go. Co lab is a pitch of how I would approach this emerging issue. Virtual communication can get very rigid and unclear. In this project I wanted to bring simplicity and fun.
           </p>
         </section>
 
@@ -105,36 +124,39 @@
         <section id = "col_research">
 
           <h2 class="section-title">research</h2>
-          <img id = "graph" src="images/co lab/graph.png" alt="">
-          <div id = "col_dem" class = "project-caption">
-            <h3 class="bold-title">DEMOGRAPHICS</h3>
+          <img id = "graph" class = "graph" src="images/co lab/graph.png" alt="">
+          <div id = "col_dem" class = "project-caption caption-left mobile-hidden">
+            <h3 class="caption-title">DEMOGRAPHICS</h3>
             <p>52.4% of respondents are below age 24.
                                       <br>
                                       42% are between 25 - 44 years old.<br>
             </p>
           </div>
 
-          <div id = "col_usage" class = "project-caption">
-            <h3 class="bold-title">USAGE</h3>
+          <div id = "col_usage" class = "project-caption caption-left mobile-hidden">
+            <h3 class="caption-title">USAGE</h3>
             <p>76.2% of respondents use cloud app for work.
                                       <br>
                                       71.4% of respondents use a storage app mostly on desktop / laptop
             </p>
           </div>
 
-          <h3 id = "col_pers" class="bold-title">PERSONA</h3>
+          <h3 id = "col_pers" class="subsection-title caption-title  mobile-hidden">PERSONA</h3>
 
           <!--PERSONA 1-->
-          <img id = "col_pers_img1" class = "persona" src="images/co lab/persona1.png" alt="picture of young freelance designer">
+          <figure class = "pers-img-fig persona-right-wide desktop-only">
+            <figcaption class = "pers-img-cap persona-name desktop-only">Ola B.</figcaption>
+            <img class = "pers_img persona-img desktop-only" src="images/co lab/persona1.png" alt="young man working on his laptop">
+          </figure>
 
-          <div id = "col_juniorc" class = "project-caption">
-            <h3 class="bold-title">JUNIOR COPYWRITER IN PHOENIX </h3>
+          <div id = "col_juniorc" class = "project-caption persona-left-wide desktop-only mobile-hidden">
+            <h3 class="caption-title">JUNIOR COPYWRITER IN PHOENIX </h3>
             <p>“Starting as a freelance writer can sometimes be challenging. It is like running your own business and organization is crucial.”
             </p>
           </div>
 
-          <div id = "col_frus1" class = "project-caption">
-            <h3 class="bold-title">FRUSTRATIONS</h3>
+          <div id = "col_frus1" class = "project-caption left-narrow desktop-only mobile-hidden">
+            <h3 class="caption-title">FRUSTRATIONS</h3>
             <p>Communication is time consuming.
                                         <br>
                                         Unorganized systems in  projects cause frustration.
@@ -142,8 +164,8 @@
             </p>
           </div>
 
-          <div id = "col_goals1" class = "project-caption">
-            <h3 class="bold-title">GOALS</h3>
+          <div id = "col_goals1" class = "project-caption left-narrow desktop-only mobile-hidden">
+            <h3 class="caption-title">GOALS</h3>
             <p>Time efficiency.
                                         <br>
                                         Organize files.
@@ -153,72 +175,95 @@
           </div>
 
           <!--PERSONA 2-->
-          <img id = "col_pers_img2" class = "persona" src="images/co lab/persona2.png" alt="young man working on his laptop">
-          <div id = "col_seniorg" class = "project-caption">
-            <h3 class="bold-title">SENIOR GRAPHIC DESIGNER IN BROOKLYN </h3>
+          <figure class = "pers-img-fig persona-left-wide">
+            <figcaption class = "pers-img-cap persona-name">JOHN K.</figcaption>
+            <img class = "pers_img persona-img mobile-hidden" src="images/co lab/persona2.png" alt="young man working on his laptop">
+            <img class = "pers_img persona-img mobile-only" src="images/co lab/mobile/persona.png" alt="young man working on his laptop">
+          </figure>
+
+          <div id = "col_seniorg" class = "project-caption persona-right-wide">
+            <h3 class="caption-title">SENIOR GRAPHIC DESIGNER IN BROOKLYN </h3>
             <p>“If I could improve one thing it would be to  humanize virtual communication with my team and clients, so I can understand what is needed to be done immediately.”  <br>
             </p>
           </div>
 
-          <div id = "col_frus2" class = "project-caption">
-            <h3 class="bold-title">FRUSTRATIONS</h3>
+          <div id = "col_frus2" class = "project-caption right-narrow">
+            <h3 class="caption-title">FRUSTRATIONS</h3>
             <p>Failure in communication causes too many delays.
                                         <br>
                                         Too many tools and platforms for communication.
             </p>
           </div>
 
-          <div id = "col_goals2" class = "project-caption">
-            <h3 class="bold-title">GOALS</h3>
+          <div id = "col_goals2" class = "project-caption right-narrow mobile-align-right">
+            <h3 class="caption-title">GOALS</h3>
             <p>Clarity in communication
                                         <br>
                                         Unifying communication tools.
             </p>
-          <div>
+          </div>
+
+          <div id = "col_pers_background" class = "hero mobile-grey-back mobile-only">
+          </div>
 
         </section>
 
-        <!--INFORMATION ARCHITECTURE-->
-        <section id = "col_info_architecture">
-          <h2 class="section-title">INFORMATION ARCHITECTURE</h2>
-          <h3 id = "col_user_wants_col" class="bold-title">AS A USER WANTS TO COLLABORATE</h3>
-          <img id = "col_flow1" class = "flow" src="images/co lab/flow1.svg" alt="flow chart">
-          <h3 id = "col_user_wants_organize" class = "bold-title">AS A USER WANTS TO ORGANIZE FILES</h3>
-          <img id = "col_flow2" class= "flow" src="images/co lab/flow2.svg" alt="flow chart">
-          <h3 id = "col_legend_title" class="bold-title">legend</h3>
-          <img id = "col_legend" src="images/co lab/legend.svg" alt="flow chart">
+        <!--INFORMATION ARCHITECTURE (Desktop and Tablet Only)-->
+        <section id = "col_info_architecture mobile-hidden">
+          <h2 class="section-title mobile-hidden">INFORMATION ARCHITECTURE</h2>
+          <h3 id = "col_user_wants_col" class="subsection-title caption-title  mobile-hidden">AS A USER WANTS TO COLLABORATE</h3>
+          <img id = "col_flow1" class = "full-width-img mobile-hidden" src="images/co lab/flow1.svg" alt="flow chart">
+          <h3 id = "col_user_wants_organize" class = "subsection-title caption-title  mobile-hidden">AS A USER WANTS TO ORGANIZE FILES</h3>
+          <img id = "col_flow2" class= "full-width-img mobile-hidden" src="images/co lab/flow2.svg" alt="flow chart">
+          <h3 id = "col_legend_title" class="subsection-title caption-title -right mobile-hidden">legend</h3>
+          <img id = "col_legend" class ="right-align-img mobile-hidden" src="images/co lab/legend.svg" alt="flow chart">
+        </section>
+
+        <!-- SKETCHES (Mobile Only) -->
+        <section id = "col_sketches" class = "mobile-only">
+          <h2 class="section-title mobile-only">SKETCHES</h2>
+          <div class="full-width-img oct-box">
+            <img  class="mobile-only" src="images/co lab/mobile/sketches1.png" alt="">
+            <h3 class="caption-title mobile-only">organize</h3>
+            <img class="oct-box-img mobile-only" src="images/co lab/mobile/sketches2.png" alt="">
+            <h3 class="caption-title mobile-only">collaborate</h3>
+            <img class="oct-box-img mobile-only" src="images/co lab/mobile/sketches3.png" alt="">
+            <h3 class="caption-title mobile-only">talk</h3>
+          </div>
         </section>
 
         <!--PROTOTYPE AND TESTING-->
         <section id = "col_proto_testing">
-          <h2 class="section-title">PROTOTYPE & TESTING</h2>
-          <h3 id = "col_pwebsite" class="bold-title">WEBSITE</h3>
-          <img id = "col_sketch1" class = "sketch" src="images/co lab/sketches1.png" alt="">
-          <h3 id = "col_pdash" class="bold-title">DASHBOARD</h3>
-          <img id = "col_sketch2" class="sketch" src="images/co lab/sketches2.png" alt="">
-          <div id = "col_testing1" class = "project-caption">
-            <h3 class="bold-title">TESTING #1 </h3>
+          <h2 class="section-title mobile-hidden">PROTOTYPE & TESTING</h2>
+          <h2 class="section-title mobile-only">TESTING #1</h2>
+          <h3 id = "col_pwebsite" class="subsection-title caption-title  mobile-hidden">WEBSITE</h3>
+          <img id = "col_sketch1" class = "full-width-img mobile-hidden" src="images/co lab/sketches1.png" alt="">
+          <h3 id = "col_pdash" class="subsection-title caption-title  mobile-hidden">DASHBOARD</h3>
+          <img id = "col_sketch2" class="full-width-img mobile-hidden" src="images/co lab/sketches2.png" alt="">
+          <div id = "col_testing1" class = "subsection-title project-caption mobile-hidden">
+            <h3 class="caption-title mobile-hidden">TESTING #1 </h3>
             <p>WIREFRAMES</p>
           </div>
 
-          <img id = "col_wireframe1" class="wireframe" src="images/co lab/wireframe1.png" alt="">
+          <h3 id = "col_wireframe_sub" class="subsection-title caption-title mobile-only">WIREFRAME</h3>
+          <img id = "col_wireframe1" class="centered-img" src="images/co lab/wireframe1.png" alt="">
 
-          <div id = "col_adjustments1" class = "project-caption">
-            <h3 class="bold-title">ADJUSTEMENTS </h3>
+          <div id = "col_adjustments1" class = "centered-text project-caption ">
+            <h3 class="caption-title">ADJUSTEMENTS </h3>
             <p>Added an invite button to the left, in the collaborator section.
             </p>
           </div>
 
-          <img id = "col_wireframe2" class="wireframe" src="images/co lab/wireframe2.png" alt="">
+          <img id = "col_wireframe2" class="centered-img" src="images/co lab/wireframe2.png" alt="">
 
-          <div id = "col_adjustments2" class = "project-caption">
-            <h3 class="bold-title">ADJUSTEMENTS </h3>
+          <div id = "col_adjustments2" class = "centered-text project-caption ">
+            <h3 class="caption-title">ADJUSTEMENTS </h3>
             <p>Added 6 step on-boarding guide to clarify the use features.
             </p>
           </div>
 
-          <div id = "col_demogrphics" class = "project-caption">
-              <h3 class="bold-title">DEMOGRAPHICS </h3>
+          <div id = "col_demogrphics" class = "project-caption caption-right desktop-only mobile-hidden">
+              <h3 class="caption-title">DEMOGRAPHICS </h3>
               <p>Users were full- time professionals. 23-45 y.o. Tech savvy. Female and Male. Fluent English. Cloud Storage users. Spend around 20 -30 h/week on the internet</p>
           </div>
         </section>
@@ -226,123 +271,146 @@
         <!--VISUAL DESIGN-->
         <section id = "col_visual_design">
           <h2 class="section-title">VISUAL DESIGN</h2>
-          <p id = "col_visd_text"  class="project-paragraph">Co lab wants to bring a simplicity and fun and also differentiate itself from the competition. What is the emotion we want to share with the user? We want to be fun and welcoming and that is why we have chosen warm tones, playful typography  and comic illustrations.
-            <br>  <br>
-            Part of the branding is also transparency in communication expressed by overlaping organic shapes.
+          <p id = "col_visd_text"  class="project-paragraph centered-text">Co lab wants to bring a simplicity and fun and also differentiate itself from the competition. What is the emotion we want to share with the user? We want to be fun and welcoming and that is why we have chosen warm tones, playful typography  and comic illustrations.
+            <br class = "mobile-hidden">  <br class = "mobile-hidden">
+            <span class = "mobile-hidden">Part of the branding is also transparency in communication expressed by overlaping organic shapes.</span>
           </p>
-          <h3 id = "col_typo" class="bold-title">TYPOGRAPHY </h3>
+          <div id = "col_vd_background" class = "hero mobile-grey-back mobile-only">
+          </div>
 
-          <img id = "col_typo_img" src="images/co lab/typography.svg" alt="">
-
-          <div id = "col_typo_cap" class = "project-caption">
-            <h3 class="bold-title">Type Pairing</h3>
+          <h3 id = "col_typo" class="subsection-title caption-title ">TYPOGRAPHY </h3>
+          <img id = "col_typo_img" class ="centered-img mobile-hidden" src="images/co lab/typography.svg" alt="">
+          <img id = "col_typo_img_mobile" class ="centered-img mobile-only" src="images/co lab/mobile/typo3.svg" alt="">
+          <div id = "col_typo_cap" class = "project-caption caption-right desktop-only mobile-hidden">
+            <h3 class="caption-title">Type Pairing</h3>
             <p>Neuzit Grotesk intended to be timeless with no distinguishing characteristics. The text complementary typeface is Warnock Pro Light. Design features sharp, wedge-shaped serifs which creates a nice contrast with the clean and bold Neuzeit Grotesk.
             </p>
           </div>
 
-          <h3 id = "col_color" class="bold-title">COLOR PALETTE</h3>
-          <img id = "col_color_img" src="images/co lab/colors.svg" alt="">
-
-          <div id = "col_color_cap" class = "project-caption">
-            <h3 class="bold-title">analogous color</h3>
+          <h3 id = "col_color" class="subsection-title caption-title ">COLOR PALETTE</h3>
+          <img id = "col_color_img" class = "centered-img mobile-hidden" src="images/co lab/colors.svg" alt="">
+          <img id = "col_color_img_mobile" class ="centered-img mobile-only" src="images/co lab/mobile/Screen-Shot.png" alt="">
+          <div id = "col_color_cap" class = "project-caption caption-right desktop-only mobile-hidden">
+            <h3 class="caption-title">analogous color</h3>
             <p>Warm colors represent welcoming and friedly environment. In contrast the rich bule tone brings in a feeling of security and privacy.
             </p>
           </div>
 
-          <h3 id = "col_illust" class="bold-title">ILLUSTRATIONS</h3>
-
-          <img id="meerkat1" src="images/co lab/meerkat1.svg" alt="">
-
-          <img id="meerkat2" src="images/co lab/meerkat2.png" alt="">
-
-          <img id="col_computer_vd" src="images/co lab/computer.png" alt="">
-
-          <div id = "meercats" class = "project-caption">
-            <h3 class="bold-title">MEERKATS</h3>
+          <h3 id = "col_illust" class="subsection-title caption-title mobile-hidden">ILLUSTRATIONS</h3>
+          <div id = "meercats" class = "caption-right project-caption mobile-hidden">
+            <h3 class="caption-title">MEERKATS</h3>
             <p>Meerkats are one of the most collaborative animals.</p>
-            <h3 class="bold-title">SHAPES</h3>
+            <h3 class="caption-title">SHAPES</h3>
             <p> The use of organic shapes differetiates the app from it's competition. </p>
           </div>
+
+          <div id = "meercats-mobile" class = "project-caption caption-right mobile-only">
+            <h3 class="caption-title">ILLUSTRATIONS</h3>
+            <p>Meerkats are one of the most collaborative and organized animals.  They also bring fun to the environment.</p>
+          </div>
+
+          <img id="meerkat1" class = "meercat-left" src="images/co lab/meerkat1.svg" alt="">
+
+          <img id="meerkat2" class = "meercat-right mobile-hidden" src="images/co lab/meerkat2.png" alt="">
+
+          <img id="col_computer_vd" class = "left-align-x-wide" src="images/co lab/computer.png" alt="">
 
         </section>
 
         <!--TESTING #2-->
         <section id = "col_test2">
 
-          <h2 class="section-title">TESTING #2</h2>
-
-          <div id = "col_test2_cap" class = "project-caption">
-              <h3 class="bold-title">TESTING #2 </h3>
-              <p class="project-caption">HI-FIDELITY</p>
+          <div id = "col_test_background" class = "hero mobile-grey-back mobile-only">
           </div>
 
-          <img id="hi-small1" src="images/co lab/hi1.png" alt="">
+          <h2 class="section-title">TESTING #2</h2>
 
-          <img id="hi-small2" src="images/co lab/hi2.png" alt="">
+          <h3 id = "col_test2_cap" class="subsection-title caption-title ">HI-FIDELITY</h3>
 
-          <div id = "col_test2_adj1" class = "project-caption">
-            <h3 class="bold-title">ADJUSTEMENTS </h3>
+          <img id="hi-small1" class = "full-width-img" src="images/co lab/hi1.png" alt="">
+
+          <img id="hi-small2" class = "full-width-img" src="images/co lab/hi2.png" alt="">
+
+          <div id = "col_test2_adj1" class = "centered-text project-caption ">
+            <h3 class="caption-title">ADJUSTEMENTS </h3>
             <p class="project-caption">The chat feature was removed from the collaboration space. The user was confused with multiple tools and did not understant where to actually collaborate.
 
               A caption was added to clarify the option to invite collaborators </p>
             </p>
           </div>
 
-          <img id="hi-big1" src="images/co lab/hi3.png" alt="">
+          <img id="hi-big1" class="centered-img" src="images/co lab/hi3.png" alt="">
 
-          <div id = "col_test2_adj2" class = "project-caption">
-            <h3 class="bold-title">ADJUSTEMENTS </h3>
+          <div id = "col_test2_adj2" class = "centered-text project-caption ">
+            <h3 class="caption-title">ADJUSTEMENTS </h3>
             <p class="project-caption">Added drag and drop to the talk room.
             </p>
           </div>
 
-          <img id="hi-big2" src="images/co lab/hi4.png" alt="">
+          <img id="hi-big2" class="centered-img mobile-hidden" src="images/co lab/hi4.png" alt="">
 
-          <div id = "col_test2_adj3" class = "project-caption">
-            <h3 class="bold-title">ADJUSTEMENTS </h3>
+          <div id = "col_test2_adj3" class = "centered-text project-caption  mobile-hidden">
+            <h3 class="caption-title">ADJUSTEMENTS </h3>
             <p class="project-caption">Added an option to 'invite' to collaborate to the talk room.
             </p>
           </div>
 
-          <div id = "col_test2_dem" class = "project-caption">
-            <h3 class="bold-title">DEMOGRAPHICS </h3>
+          <div id = "col_test2_dem" class = "project-caption caption-right desktop-only mobile-hidden">
+            <h3 class="caption-title">DEMOGRAPHICS </h3>
             <p class="project-caption">Users were full- time professionals. 23-45 y.o. Tech savvy. Female and Male. Fluent English. Cloud Storage users. Spend around 20 -30 h/week on the Internet
             </p>
           </div>
 
           <!--clickable prototype-->
-          <img id = "col_shape2" src="images/co lab/shape2.svg" alt="">
-
-          <div id = "col_prototypes">
-              <a href="https://www.figma.com/proto/kALVjG06FKhQ6qmPNfsxdE/CO-LAB-desktop%2Flaptop-(after)?node-id=1%3A3&scaling=min" id="link-desktop" >clickable prototype</a>
-              <!-- <a href="#" id="link-mobile" >mobile prototype</a> -->
+          <div id = "col_click_proto" class ="centered-narrow mobile-hidden">
+            <img id = "col_shape2" class ="mobile-hidden" src="images/co lab/shape2.svg" alt="">
+            <a id="link-desktop" class = "prototype mobile-hidden" href="https://www.figma.com/proto/kALVjG06FKhQ6qmPNfsxdE/CO-LAB-desktop%2Flaptop-(after)?node-id=1%3A3&scaling=min">
+              <h4 class = "desktop-prototype">clickable prototype</h4>
+            </a>
+            <a id="link-mobile" class = "prototype mobile-hidden" href="#">
+              <h4 id = "mobile-prototype">mobile prototype</h4>
+            </a>
           </div>
         </section>
 
         <!--CONCLUSION-->
         <section id = "col_conclusion">
           <h2 class="section-title">CONCLUSION</h2>
-          <img class = "computers" src="images/co lab/computers.png" alt="">
-          <h3 class="col_org bold-title">organization</h3>
-          <h3 class="col_col bold-title">collaboration</h3>
-          <h3 class="col_com bold-title">communiation</h3>
-          <p id = "col_con_text" class="project-paragraph grid-centered">In this project I worked with three different critical productivity tools and designed an interface that allow the uninterrupted workflow between each of these tools. This allows uploading files into pre-designed organizational file strictures, real time infile collaborating with other users and facilitating discussions and planning without leaving an individual app.
+          <img class="full-width-img computers mobile-hidden" src="images/co lab/computers.png" alt="">
+          <!-- O.C.T Box -->
+          <div class="full-width-img oct-box">
+            <h3 class="caption-title mobile-hidden">organization</h3>
+            <h3 class="caption-title mobile-hidden">collaboration</h3>
+            <h3 class="caption-title mobile-hidden">communication</h3>
+          </div>
+          <!-- End O.C.T. Box -->
+          <p id = "col_con_text" class="project-paragraph centered-text">In this project I worked with three different critical productivity tools and designed an interface that allow the uninterrupted workflow between each of these tools. This allows uploading files into pre-designed organizational file strictures, real time infile collaborating with other users and facilitating discussions and planning without leaving an individual app.
             <br><br>
+
+            <span>
             Frequently users do not consider planning organization at the head of a project an important step. Bad organization will slow productivity, confuse other users and create frustration. To aide the user, I have conceptualized an option to use pre-designed industry and project specific templates for file organization. These templates can be built based on research and industry specific best practices. This would enable the user to “one-click” select proper organization and build logical pathways to his files.
             <br><br>
             It is a big challenge is to humanize collaboration between people. The productive worlds reliance on email and text based communication tools can become very frustrating as communicating verbally is not always the most clear way.  To address the need for visual and 3 dimensional communication, I devised a set of tools to help users clearly demonstrate their thoughts. In the application’s collaboration room the user can open a specific project and invite other people and visually work on adjustments. Users can pin a picture, draw, or make requests. While people are taking notes, they often lose attention and also don’t remember all information accurately. I have added the ability to record a session in case collaborators need to revisit changes that were made while in a session.
             <br><br>
             Co lab is a tool that provides more options how to bring clarity into virtual communication. The modern professional is mostly communicating via email. That causes distraction when seeing new emails coming and changing between different platforms. This causes distraction and the user loses focus. One of my intentions was to build communication in teams, groups and individuals within the product. While communicating user can navigate in files and easily share them without leaving communication. User also has access to his calendar to plan out his schedule.
+            </span>
+
             <br><br>The amount of freelancers and business of one is increasing.  Virtual collaboration is rapidly growing. Easy online collaboration will be in demand.
-            <br><br><span id="bold">Let's make it easy and fun!</span>
+
+            <br><br>
+            <span class="bold">Let's make it easy and fun!</span>
           </p>
+
+          <img id="bottom-shape-mobile" class ="hero mobile-only" src="images/co lab/mobile/bottom-shape.svg" alt="">
+
+          <a id="prototpe-link" class = "centered-narrow mobile-only" href="https://www.figma.com/proto/kALVjG06FKhQ6qmPNfsxdE/CO-LAB-desktop%2Flaptop-(after)?node-id=1%3A3&scaling=min">
+            <h4 class = "desktop-prototype">clickable prototype</h4>
+          </a>
 
         </section>
 
-        <!-- <footer>
-
+        <footer class= "project-footer">
           <a class="up" href="#">
-
             <img src="images/co lab/up.svg" alt="">
             <p>go up</p>
           </a>
@@ -352,7 +420,7 @@
             <img src="images/co lab/next.svg" alt="">
           </a>
 
-        </footer> -->
+        </footer>
       </main>
     </body>
     </html>

@@ -25,58 +25,70 @@
 
   <body>
 
-    <!-- Navigation -->
 
-    <header>
-      <a href="index.html" id="logo">R°</a>
-      <nav>
-        <ul class = "menu">
-          <li>
-            <a class = "in" href="https://www.linkedin.com/in/romana-wilson-design/" id="linkedin"></a>
-          </li>
-          <li>
-            <a href="contact.html" class="contact">contact</a>
-          </li>
-          <li>
-            <a href="projects.html" class="projects">projects</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <header>
+          <!-- Navigation -->
+          <nav class = "main-menu">
+            <a href="index.html" class = "logo">R°</a>
+            <ul >
+              <li>
+                <a href="https://www.linkedin.com/in/romana-wilson-design/"><img class = "pages in" src = "images/in.png"></a>
+              </li>
+              <li>
+                <a href="contact.html" class="pages">contact</a>
+              </li>
+              <li>
+                <a href="projects.html" class="pages">projects</a>
+              </li>
+            </ul>
+          </nav>
+
+        </header>
 
 
-    <main class="project-main">
-      <!-- Project 1 -->
-      <a href="colab.html">
-        <div class="colab">
+    <main class= "project">
+
+      <section id = projects>
+
+        <!-- Project 1 -->
+        <a id= "colab" class = "left-narrow" href="colab.html">
+          <figure>
             <img class="meerkat" src="images/co lab/colab.png" alt="meerkat"> <br>
-          <div class"text1">
-            <a href="colab.html" class="project-name">co  lab</a> <br>
-            <p class="project-caption"> cloud storage application </p>
-          </div>
-        </div>
-      </a>
-      <!-- Project 2 -->
-      <a href="peas.html">
-      <div class="peasinheart">
-        <img class="peas" src="images/peas/peas.svg" alt="peas">
-          <div class"text2">
-            <a href="peas.html" class="project-name" >peas in heart</a> <br>
-            <p  class="project-caption"> illustartion studio </p> <br>
-            <p  class="project-text"> case study coming soon </p>
-        </div>
-      </div>
-    </a>
+            <figcaption class ="text1">
+              <h1 class="project-name">co  lab</h1>
+              <p class="caption"> cloud storage application </p>
+            </figcaption>
+          </figure>
+        </a>
+
+        <!-- Project 2 -->
+
+        <a id = "peasinheart" class = "right-narrow" href="peas.html">
+          <figure >
+            <img class="peas" src="images/peas/peas.svg" alt="peas">
+            <figcaption class ="text2">
+              <h1 class="project-name" >peas in heart</h1>
+              <p  class="caption"> illustartion studio </p>
+              <p  class="caption-detail"> case study coming soon </p>
+            </figcaption>
+          </figure>
+        </a>
+          <!-- </div> -->
+
+
+      </section>
 
     </main>
-    <div id = "mobile">
+
+    <!-- <div id = "mobile">
         <h2 class="section-title" id="lowercase">projects<h2>
         <p class="hero-text">
           Working hard on the mobile!
           <br><br>
           In the mean time please visit the desktop site
-        </p>
+        </p> -->
         <!-- <img class="" src="images/shape-mobile.svg" alt=""> -->
+
     </div>
   </body>
 </html>

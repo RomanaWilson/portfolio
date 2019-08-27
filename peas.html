@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/peas.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69844968-1"></script>
@@ -44,47 +45,44 @@
 
         </header>
 
-
     <main class="project">
 
       <!-- HERO SESTION -->
-      <section id = "hero" class = "section">
+      <section id = "peas-hero" class = "section">
         <!--HERO SECTION-->
-        <img id="shape1" src="images/peas/Brno.svg" alt="">
-        <h1 id = "colab-title" class="hero-title">peas in heart</h1>
-        <p id = "colab-desc" class="hero-text">Peas in Heart is a design studio capturing Czech culture in illustrations. The studio's products are represented in over 30 stores and it creates custom illustrations for cities, regions, universities and businesses all over the country.</p>
+        <img id="peas-shape1" class = "full-width-img mobile-hidden" src="images/peas/Brno.svg" alt="">
+        <img id="peas-shape1" class = "full-width-img mobile-only" src="images/peas/mobile/Brno-small.svg" alt="">
+        <h1 id = "peas-title" class="section-title hero-title">peas in heart</h1>
+        <p id = "peas-desc" class="centered-text hero-text">Peas in Heart is a design studio capturing Czech culture in illustrations. The studio's products are represented in over 30 stores and it creates custom illustrations for cities, regions, universities and businesses all over the country.</p>
+
         <!--the little text-->
+        <div id = "peas-hero-detail" class = "centered-text fixed-width-centered">
+          <div id = "peas-role" class = "sub-col1 project-caption" >
+            <h3  class="bold-title">ROLE</h3>
+            <p>Research<br>
+                                      UX Design<br>
+                                      UI Design<br>
+                                      Illustrations
+            </p>
+          </div>
+          <div id = "peas-location" class = "sub-col2 project-caption mobile-hidden">
+            <h3 class="bold-title">location</h3>
+            <p>Czech Republic <br> (Remote) </p>
 
-        <div class = "project-caption" id = "role">
-          <h3  class="bold-title">ROLE</h3>
-          <p>Research<br>
-                                    UX Design<br>
-                                    UI Design<br>
-                                    Illustrations
-          </p>
+            </p>
+          </div>
+
+          <div id = "peas-website" class = "sub-col3 project-caption">
+            <h3 class="bold-title">website</h3>
+            <a href="https://www.peasinheart.com/" class="project-caption green">www.peasinheart.com</a>
+
+          </div>
         </div>
 
-        <div class = "project-caption" id = "location">
-          <h3 class="bold-title">location</h3>
-          <p>Czech Republic <br> (Remote) </p>
-
-          </p>
-        </div>
-
-        <div class = "project-caption" id = "website">
-          <h3 class="bold-title">website</h3>
-          <a href="https://www.peasinheart.com/" class="project-caption" id="green">www.peasinheart.com</a>
-
-        </div>
-        <!-- <div class = "infotext" id = "peas_infotext ">
-          <p>I am curently working on case study for peas in heart project.</p>
-
-
-          </p>
-        </div> -->
+        <p class = "centered-text green mobile-hidden" id = "peas-infotext">I am curently working on case study for peas in heart project.</p>
 
       </section>
-      <!-- <footer>
+      <footer>
 
         <a class="up" href="#">
           <img src="images/co lab/up.svg" alt="">
@@ -96,7 +94,7 @@
           <img src="images/co lab/next.svg" alt="">
         </a>
 
-      </footer> -->
+      </footer>
     </main>
 
 

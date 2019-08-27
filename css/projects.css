@@ -1,126 +1,28 @@
-/* project page*/
-@media screen and (max-width: 599px) {
 
-  .colab{display: none;}
-  .text1{display: none;}
-  .peasinheart{display: none;}
-  .text2{display: none;}
+/* -------------- COLAB TEXT STYLES --------------- */
 
-  .project-main{display: none}
 
-  #mobile {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../images/shape-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 70%;
-    padding: 0% 9.6% 0% 9.6%;
-  }
-
-  #mobile h2 {
-    text-align: center;
-    padding-top: 40%;
-    }
-
-  #mobile p {
-    text-align: left;
-    color: #000000;
-  }
-
-  #mobile img {
-    grid-column:  1/2;
-    grid-row-start: 1;
-    /* width: 100% */
-  }
-  
+a:link {
+  text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+.project-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: black;
+}
 
+.caption {
+  font-family: Neuzeit Grotesk;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
 
-  #mobile {display: none;}
-
-
-  .project-main{
-    margin-left: 9.6%;
-    margin-right: 9.6%;
-
-    display: grid;
-    grid-template-columns: repeat (5, 1fr);
-    grid-column-gap:20px;
-    grid-template-rows: 140px 140px 140px 140px 140px;
-    grid-row-gap: 1px;
-
-  }
-
-
-  /*  Meerkat */
-
-  .colab{
-    grid-column: 2/3;
-    grid-row: 2/5;
-  }
-
-  .meerkat{
-      margin-bottom: 30px;
-      max-width: 167px;
-
-  }
-
-  .text1{
-    grid-column: 2/3;
-    grid-row-start: 4;
-  }
-
-  /*  peas in heart */
-  .peasinheart{
-    grid-column: 4/6;
-    grid-row: 4/5;
-  }
-
-  .peas{
-      margin-bottom: 30px;
-      height: 133.93px;
-
-  }
-  .text2{
-    width: 353px;
-    height: 60px;
-    grid-column: 4/6;
-    grid-row-start: 4;
-  }
-
-  /*  text */
-
-  a:link {
-    text-decoration: none;
-  }
-
-  .project-name{
-    font-family: Neuzeit Grotesk;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-
-    color: #000000;
-  }
-
-
-
-  .project-caption {
-    font-family: Neuzeit Grotesk;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-.project-text{
+.caption-detail {
   font-family: Neuzeit Grotesk;
   font-style: regular;
   font-weight: normal;
@@ -129,8 +31,124 @@
   color: #828282;
 }
 
+
+/* -------------------- LAYOUT -------------------- */
+
+/* ---- Ensure Always Full Height ---- */
+
+main {
+  min-height: 100vh;
+}
+
+
+/* ---- Grid Section Layout ---- */
+
+/* Mobile and Tablet */
+
+@media screen and (max-width: 899px) {
+  #projects {
+    grid-template-rows: 83px
+                        auto
+                        5px
+                        auto
+                        1fr;
+  }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 900px) {
+  #projects {
+    grid-template-rows: repeat(5, 140px);
+
+  }
+}
+
+/* ---- Grid Items ---- */
+
+/* There are two items on the grid co lab and peas.
+the text and image pieces are absolute positioned
+within their cotainer, which is places on the
+grid. */
+
+figure {
+  /* This allows for absolute positoning of child elemtns  */
+  position: relative;
+}
+
+/* co lab */
+
+#colab {
+  grid-row-start: 2;
+  display: relative;
+  width: 167px;
+  justify-self: center;
+}
+
+.meerkat{
+
+  max-width: 167px;
+}
+
+.text1 {
+  padding-top: 24px;
+}
+
+
+/*  peas in heart */
+
+#peasinheart {
+  grid-row-start: 4;
+  display: relative;
+  width: 354px;
+}
+
+.peas {
+  max-width: 117px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text2 {
+  position: absolute;
+  top: 83px;
+  left: 59px;
+  text-align: center;
+}
+
+@media screen and (max-width: 899px) {
+/* Peas positioning requires a tweak in the mobile. */
+
+#peasinheart {
+  grid-row-start: 4;
+  display: relative;
+  width: 183px;
+  justify-self: center;
+
+}
+
+.peas {
+  max-width: 145px;
+  position: absolute;
+  top: 0;
+  left: 19px;
+}
+
+.text2 {
+  position: absolute;
+  top: 206px;
+  left: 0;
+  text-align: left;
+
+}
+
+
+
 /*-----mobile coming soon-----*/
 
+/* hopefully we are done with this... */
 #lowercase{
    text-transform: lowercase;
 }
