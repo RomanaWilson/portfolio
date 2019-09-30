@@ -577,14 +577,14 @@ footer a:active {
   justify-content: flex-start;
   position: relative;
   width: 160px;
-  margin-left: calc(44px + 8.868%);
+  margin-left: calc(16px + 8.868%);
 }
 
 .next {
   justify-content: flex-end;
   position: relative;
   width: 160px;
-  margin-right: calc(44px + 8.868%);
+  margin-right:  8.868%;
 }
 
 .up img {
@@ -762,8 +762,8 @@ footer a:active {
 
 .profile{
   position: absolute;
-  width: 77px;
-  height: 79px;
+  /* width: 77px;
+  height: 79px; */
   left: 98px;
   top: 15px;
 }
