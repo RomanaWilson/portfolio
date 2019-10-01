@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: white;
-    font-family: 'Neuzeit Grotesk', Arial, Helvetica, sans-serif;
+    font-family: 'neuzeit-grotesk', Arial, Helvetica, sans-serif;
     color: #000000;
     max-width: 1152px;
     min-height: 100%;
@@ -43,7 +43,7 @@ these definitions and will changes may impact
 elements across all pages.
 
 Note:
-  font-family: 'Neuzeit Grotesk', Arial, Helvetica, sans-serif;
+  font-family: 'neuzeit-grotesk', Arial, Helvetica, sans-serif;
   color: #000000;
 --> These will be inherited by all <h*> and <p> settings unless overiden.
 */
@@ -429,7 +429,7 @@ grid-column: sub-col3-start / sub-col3-end;
 /* Still working on this... */
 
 aside {
-  font-family: 'Neuzeit Grotesk';
+  font-family: 'neuzeit-grotesk';
   font-style: normal;
   font-weight: 300;
   font-size: 1.2em;
@@ -500,6 +500,20 @@ text-decoration: none;
   margin-right: 6.2rem;
 }
 
+@media screen and (max-width: 599px) {
+  .pages {
+    margin-right: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .pages {
+    margin-right: 6.2rem;
+  }
+
+}
+
 .logo {
   font-size: 4.8rem;
   font-weight:600;
@@ -530,7 +544,7 @@ box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.03);
 }
 
 .project footer a {
-  font-family: 'Neuzeit Grotesk';
+  font-family: 'neuzeit-grotesk';
   font-style: normal;
   font-weight: bold;
   font-size: 1.4rem;
@@ -827,7 +841,7 @@ footer a:active {
   }
 
 .contact-name{
-    font-family: 'Neuzeit Grotesk';
+    font-family: 'neuzeit-grotesk';
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -841,7 +855,7 @@ footer a:active {
   }
 
 .contact-email{
-    font-family: 'Neuzeit Grotesk';
+    font-family: 'neuzeit-grotesk';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
