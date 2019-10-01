@@ -15,7 +15,7 @@ a:link {
 }
 
 .caption {
-  font-family: Neuzeit Grotesk;
+  font-family: neuzeit-grotesk;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.1em;
@@ -23,7 +23,7 @@ a:link {
 }
 
 .caption-detail {
-  font-family: Neuzeit Grotesk;
+  font-family: neuzeit-grotesk;
   font-style: regular;
   font-weight: normal;
   font-size: 18px;
